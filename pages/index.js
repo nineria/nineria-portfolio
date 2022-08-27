@@ -22,7 +22,6 @@ import NextLink from 'next/link';
 import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from 'react-icons/io5';
 import { BioParagraph, BioSection, BioYear } from '../components/bio';
 import thumbYouTube from '../public/images/links/youtube.png';
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png';
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
 
 const ProfileImage = chakra(Image, {
@@ -107,7 +106,10 @@ const Home = () => (
         </Paragraph>
         <Box align='center' my={4}>
           <NextLink href='/works' passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme='blue'>
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme={useColorModeValue('purple', 'blue')}
+            >
               My portfolio
             </Button>
           </NextLink>
@@ -119,16 +121,14 @@ const Home = () => (
           Bio ✈️
         </Heading>
         <BioSection>
-          <BioYear>2001</BioYear>
-          Born in Thailand (ประเทศไทย)
-        </BioSection>
-        <BioSection>
           <BioYear>2018 to present</BioYear>
           Studying the computer science&apos;s Program in Information Technology
-          and Innovation of Bangkok University
-          <BioParagraph>คณะเทคโนโลยีสารสนเทศและนวัตกรรม</BioParagraph>
-          <BioParagraph>สาขาวิทยาการคอมพิวเตอร์</BioParagraph>
-          <BioParagraph>มหาวิทยาลัยกรุงเทพ | BU</BioParagraph>
+          and Innovation of Bangkok University (คณะเทคโนโลยีสารสนเทศและนวัตกรรม
+          | สาขาวิทยาการคอมพิวเตอร์ | มหาวิทยาลัยกรุงเทพ)
+        </BioSection>
+        <BioSection>
+          <BioYear>2001</BioYear>
+          Born in Thailand (ประเทศไทย)
         </BioSection>
       </Section>
 
@@ -154,14 +154,14 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as='h3' variant='section-title'>
-          Social media 🌏
+          Social media 📱
         </Heading>
         <List>
           <ListItem>
             <Link href='https://github.com/nineria' target='_blank'>
               <Button
                 variant='ghost'
-                colorScheme={useColorModeValue('purple', 'yellow')}
+                colorScheme={useColorModeValue('purple', 'blue')}
                 leftIcon={<IoLogoGithub />}
               >
                 @nineria
@@ -172,7 +172,7 @@ const Home = () => (
             <Link href='https://twitter.com/nineria_nananai' target='_blank'>
               <Button
                 variant='ghost'
-                colorScheme={useColorModeValue('purple', 'yellow')}
+                colorScheme={useColorModeValue('purple', 'blue')}
                 leftIcon={<IoLogoTwitter />}
               >
                 @nineria_nananai
@@ -183,7 +183,7 @@ const Home = () => (
             <Link href='https://instagram.com/ninerianananai' target='_blank'>
               <Button
                 variant='ghost'
-                colorScheme={useColorModeValue('purple', 'yellow')}
+                colorScheme={useColorModeValue('purple', 'blue')}
                 leftIcon={<IoLogoInstagram />}
               >
                 @ninerianananai
@@ -212,7 +212,10 @@ const Home = () => (
 
         <Box align='center' my={4}>
           <NextLink href='/posts' passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme='blue'>
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme={useColorModeValue('purple', 'blue')}
+            >
               Popular posts
             </Button>
           </NextLink>
