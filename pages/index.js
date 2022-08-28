@@ -20,8 +20,8 @@ import Section from '@components/section';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from 'react-icons/io5';
-import { BioParagraph, BioSection, BioYear } from '../components/bio';
-import thumbYouTube from '../public/images/links/youtube.png';
+import Typewriter from 'typewriter-effect';
+import { BioSection, BioYear } from '../components/bio';
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
 import thumbAnimeSearchAlgorithm from '../public/images/works/search_algorithm.png';
 
@@ -37,10 +37,40 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign='center'
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue('purple.400', 'white')}
+        color={useColorModeValue('white', 'black')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an full-stack developer based in Thailand!
+        {/* <TypeWriter speed={100} /> */}
+        <Typewriter
+          options={{
+            delay: 50,
+            loop: true,
+          }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString('สวัสดีครับ~')
+              .pauseFor(1000)
+              .deleteAll()
+              .start();
+            typewriter
+              .typeString(
+                "Hello, I'm a front-end web developer based in Thailand!"
+              )
+              .pauseFor(5000)
+              .start();
+          }}
+        />
+
+        <Box
+          pos='absolute'
+          right='60px'
+          bottom={-2}
+          w='20px'
+          h='20px'
+          bg={useColorModeValue('purple.400', 'white')}
+          style={{ transform: 'rotate(45deg)' }}
+        />
       </Box>
 
       <Box display={{ md: 'flex' }}>
