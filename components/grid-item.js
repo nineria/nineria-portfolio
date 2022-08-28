@@ -1,4 +1,4 @@
-import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
+import { AspectRatio, Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 import Image from 'next/image';
 import NextLink from 'next/link';

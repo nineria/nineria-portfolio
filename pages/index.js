@@ -23,6 +23,7 @@ import { IoLogoGithub, IoLogoInstagram, IoLogoTwitter } from 'react-icons/io5';
 import { BioParagraph, BioSection, BioYear } from '../components/bio';
 import thumbYouTube from '../public/images/links/youtube.png';
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
+import thumbAnimeSearchAlgorithm from '../public/images/works/search_algorithm.png';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -194,19 +195,26 @@ const Home = () => (
         <Spacer my={8} />
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
+          {/* <GridItem
             href='https://www.youtube.com/devaslife'
             title='Dev as Life'
             thumbnail={thumbYouTube}
           >
             My YouTube channel (&gt;100k subs)
-          </GridItem>
+          </GridItem> */}
           <GridItem
             href='https://myanimecommunity.vercel.app/posts'
             title='MyAniCommu'
             thumbnail={thumbMyAniCommu}
           >
-            Anime community website
+            Anime news, Q&A, Review, and more
+          </GridItem>
+          <GridItem
+            href='https://github.com/nineria/AnimeListApi/blob/main/AnimeRecomendation.ipynb'
+            title='Anime Searching Algorithm'
+            thumbnail={thumbAnimeSearchAlgorithm}
+          >
+            Using TfidfVectorizer / linear_kernel
           </GridItem>
         </SimpleGrid>
 

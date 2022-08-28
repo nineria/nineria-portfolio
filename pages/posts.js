@@ -1,25 +1,42 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  Heading,
+  SimpleGrid,
+  Text,
+} from '@chakra-ui/react';
+import { GridItem } from '../components/grid-item';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
 
-import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg'
-import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg'
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg'
-import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg'
-import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg'
-import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
-import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
-import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import NextLink from 'next/link';
+import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg';
+import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png';
+import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg';
+import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg';
+import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg';
+import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg';
+import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg';
+import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg';
 
 const Posts = () => (
-  <Layout title="Posts">
+  <Layout title='Posts'>
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as='h3' fontSize={20} mb={4}>
         Popular Posts
       </Heading>
 
-      <Section delay={0.1}>
+      <Text>Nothing right now ;)</Text>
+      <Divider my={6} />
+      <Box my={6} align='center'>
+        <NextLink href='/' passHref>
+          <Button colorScheme='teal'>Return to home</Button>
+        </NextLink>
+      </Box>
+
+      {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="How to build a portfolio website"
@@ -42,40 +59,40 @@ const Posts = () => (
             href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
           />
         </SimpleGrid>
-      </Section>
-
+      </Section> */}
+      {/* 
       <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
+            title='How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo'
             thumbnail={thumb500PaidUsers}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            href='https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820'
           />
           <GridItem
-            title="I stopped setting a financial goal for my SaaS"
+            title='I stopped setting a financial goal for my SaaS'
             thumbnail={thumbFinancialGoal}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
+            href='https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506'
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
 
-      <Section delay={0.5}>
+      {/* <Section delay={0.5}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="How to Price Yourself as a Freelance Developer"
+            title='How to Price Yourself as a Freelance Developer'
             thumbnail={thumbHowToPriceYourself}
-            href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
+            href='https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91'
           />
           <GridItem
-            title="I made my React Native app 50x faster"
+            title='I made my React Native app 50x faster'
             thumbnail={thumb50xFaster}
-            href="https://www.youtube.com/watch?v=vj723NlrIQc"
+            href='https://www.youtube.com/watch?v=vj723NlrIQc'
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
-)
+);
 
-export default Posts
-export { getServerSideProps } from '../components/chakra'
+export default Posts;
+export { getServerSideProps } from '../components/chakra';
