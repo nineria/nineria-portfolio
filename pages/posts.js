@@ -6,20 +6,13 @@ import {
   Heading,
   SimpleGrid,
   Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { GridItem } from '../components/grid-item';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 
 import NextLink from 'next/link';
-import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg';
-import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png';
-import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg';
-import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg';
-import thumbFishWorkflow from '../public/images/contents/youtube-fish-workflow.jpg';
-import thumbPortfolio from '../public/images/contents/youtube-how-to-build-portfolio.jpg';
-import thumbHowToUseInkdrop from '../public/images/contents/youtube-how-to-use-inkdrop.jpg';
-import thumbMyDeskSetup from '../public/images/contents/youtube-my-desk-setup.jpg';
 
 const Posts = () => (
   <Layout title='Posts'>
@@ -32,7 +25,9 @@ const Posts = () => (
       <Divider my={6} />
       <Box my={6} align='center'>
         <NextLink href='/' passHref>
-          <Button colorScheme='teal'>Return to home</Button>
+          <Button colorScheme={useColorModeValue('purple', 'blue')}>
+            Return to home
+          </Button>
         </NextLink>
       </Box>
 
