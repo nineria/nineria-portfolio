@@ -28,7 +28,7 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            id='404'
+            id='searchalgorithm'
             title='Anime Search Algorithm'
             thumbnail={thumbSearchAlgorithm}
           >

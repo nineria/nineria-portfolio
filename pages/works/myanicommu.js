@@ -3,24 +3,35 @@ import {
   AspectRatio,
   Badge,
   Container,
+  Heading,
   Link,
   List,
   ListItem,
 } from '@chakra-ui/react';
+import Image from 'next/image';
+
 import Layout from '../../components/layouts/article';
 import P from '../../components/paragraph';
 import { Meta, Title, WorkImage } from '../../components/work';
+import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
   <Layout title='MyAniCommu'>
     <Container>
       <Title>
-        My Anime Community <Badge>website</Badge>
+        My Anime Community <Badge>2021</Badge>
       </Title>
+      <Image src={thumbMyAniCommu} alt='myanimecommunity' />
+
+      <Heading mt={2} size='md'>
+        Description
+      </Heading>
       <P>
-        Bring together people who like anime, They can come in and talk and
-        exchange knowledge about anime, manga or light novels.
+        My Anime Community website purpose is to bring together people who like
+        anime. They can come in and talk and exchange knowledge about anime,
+        manga or light novels.
       </P>
+
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
