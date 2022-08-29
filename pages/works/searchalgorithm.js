@@ -12,7 +12,7 @@ import ReactMarkdown from 'react-markdown';
 import Layout from '../../components/layouts/article';
 import P from '../../components/paragraph';
 import { Meta, Title, WorkImage } from '../../components/work';
-import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
+// import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
   <Layout title='MyAniCommu'>
@@ -24,15 +24,7 @@ const Work = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
         deserunt!
       </P> */}
-      <P>Heading...</P>
-      <Image src={thumbMyAniCommu} alt='myanimecommunity' />
-      <P>Dataset from MyAnimeList API</P>
-      <P>
-        <Link href='https://github.com/nineria/AnimeListApi' target='_blank'>
-          https://github.com/nineria/AnimeListApi
-          <ExternalLinkIcon mx='2px' />
-        </Link>
-      </P>
+      {/* <Image src={thumbMyAniCommu} alt='myanimecommunity' /> */}
 
       <List ml={4} my={4}>
         <ListItem>
