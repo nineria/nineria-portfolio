@@ -60,7 +60,6 @@ const Home = () => {
           color='black'
           css={{ backdropFilter: 'blur(10px)' }}
           border='1px solid #555'
-          shadow='xl'
         >
           <Typewriter
             options={{
