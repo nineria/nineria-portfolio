@@ -42,8 +42,6 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => {
   const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`;
-  const buttonSchemeColorTheme = useColorModeValue('red', 'purple');
-  const buttonColorTheme = useColorModeValue('red.400', 'purple.400');
 
   const SchemeColorTheme = useColorModeValue('purple', 'red');
   const colorTheme = useColorModeValue('purple.400', 'red.400');

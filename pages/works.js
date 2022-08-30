@@ -9,7 +9,7 @@ import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
 import thumbSearchAlgorithm from '../public/images/works/search_algorithm.png';
 
 const Works = () => (
-  <Layout title='Works'>
+  <Layout title='Tewarit Jantarasorn - Works'>
     <Container>
       <Heading as='h3' fontSize={20} mb={4}>
         Works

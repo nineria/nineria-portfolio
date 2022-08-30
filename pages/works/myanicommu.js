@@ -15,7 +15,7 @@ import { Meta, Title, WorkImage } from '../../components/work';
 import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
-  <Layout title='myanicommu'>
+  <Layout title='My Anime Community'>
     <Container>
       <Title>
         My Anime Community <Badge>{new Date().getFullYear()}</Badge>

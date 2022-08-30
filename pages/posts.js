@@ -4,18 +4,15 @@ import {
   Container,
   Divider,
   Heading,
-  SimpleGrid,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { GridItem } from '../components/grid-item';
 import Layout from '../components/layouts/article';
-import Section from '../components/section';
 
 import NextLink from 'next/link';
 
 const Posts = () => (
-  <Layout title='Posts'>
+  <Layout title='Tewarit Jantarasorn - Posts'>
     <Container>
       <Heading as='h3' fontSize={20} mb={4}>
         Popular Posts

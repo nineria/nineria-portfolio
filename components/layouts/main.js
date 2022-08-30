@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
     <Box as='main' pb={8}>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='description' content="Tewarit's homepage" />
+        <meta name='description' content="Tewarit's Homepage" />
         <meta name='author' content='Tewarit Jantarasorn' />
         <meta name='author' content='nineria' />
         <link rel='apple-touch-icon' href='apple-touch-icon.png' />
@@ -33,7 +33,7 @@ const Main = ({ children, router }) => {
         <meta name='og:title' content='Tewarit Jantarasorn' />
         <meta property='og:type' content='website' />
         <meta property='og:image' content='/card.png' />
-        <title>Tewarit Jantarasorn - Portfolio</title>
+        <title>Tewarit Jantarasorn - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
