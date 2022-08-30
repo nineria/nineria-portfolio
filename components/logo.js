@@ -1,4 +1,4 @@
-import { Spacer, Text, useColorModeValue } from '@chakra-ui/react';
+import { Text, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import Link from 'next/link';
