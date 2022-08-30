@@ -1,6 +1,5 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import {
-  AspectRatio,
   Badge,
   Container,
   Heading,
@@ -12,14 +11,14 @@ import Image from 'next/image';
 
 import Layout from '../../components/layouts/article';
 import P from '../../components/paragraph';
-import { Meta, Title, WorkImage } from '../../components/work';
+import { Meta, Title } from '../../components/work';
 import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
   <Layout title='MyAniCommu'>
     <Container>
       <Title>
-        My Anime Community <Badge>2021</Badge>
+        My Anime Community <Badge>{new Date().getFullYear()}</Badge>
       </Title>
       <Image src={thumbMyAniCommu} alt='myanimecommunity' />
 

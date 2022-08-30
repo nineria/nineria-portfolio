@@ -141,13 +141,16 @@ const Home = () => {
             />{' '}
             🔥
           </Heading>
-          <Lists href='https://reactjs.org/'>ReactJS</Lists>
+          <Lists href='https://reactjs.org/'>React</Lists>
           <Lists href='https://nextjs.org/'>Next.js</Lists>
           <Lists>JavaScript (ES6)</Lists>
           <Lists>HTML5 </Lists>
           <Lists>CSS3 </Lists>
-          <Lists href='https://redux.js.org/'>Redux </Lists>
+          <Lists href='https://redux.js.org/'>Redux</Lists>
           <Lists href='https://graphql.org/'>GraphQL</Lists>
+          <Lists href='https://graphql.org/'>Photoshop</Lists>
+          <Lists href='https://graphql.org/'>Asprite</Lists>
+          <Lists href='https://graphql.org/'>Blender (basic)</Lists>
           <Spacer my={8} />
           <Heading as='h3' variant={borderLeftColor}>
             <Image
@@ -295,13 +298,6 @@ const Home = () => {
           <Spacer my={8} />
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            {/* <GridItem
-            href='https://www.youtube.com/devaslife'
-            title='Dev as Life'
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem> */}
             <GridItem
               href='https://myanimecommunity.vercel.app/posts'
               title='MyAniCommu'
@@ -326,7 +322,7 @@ const Home = () => {
                 color='white'
                 bgColor={useColorModeValue('blue.400', 'red.400')}
               >
-                Popular posts
+                All posts
               </Button>
             </NextLink>
           </Box>
