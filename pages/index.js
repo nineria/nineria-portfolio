@@ -42,6 +42,11 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => {
   const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`;
+  const buttonSchemeColorTheme = useColorModeValue('red', 'purple');
+  const buttonColorTheme = useColorModeValue('red.400', 'purple.400');
+
+  const SchemeColorTheme = useColorModeValue('purple', 'red');
+  const colorTheme = useColorModeValue('purple.400', 'red.400');
 
   return (
     <Layout>
@@ -109,7 +114,7 @@ const Home = () => {
             textAlign='center'
           >
             <Box
-              borderColor={useColorModeValue('#555', 'white')}
+              borderColor={useColorModeValue('purple.500', 'white')}
               borderWidth={2}
               p='2px'
               borderStyle='solid'
@@ -125,7 +130,7 @@ const Home = () => {
                 borderRadius='full'
                 width='100%'
                 height='100%'
-                bgColor={useColorModeValue('blue.100', 'red.200')}
+                bgColor={useColorModeValue('purple.100', 'red.200')}
               />
             </Box>
           </Box>
@@ -176,9 +181,9 @@ const Home = () => {
             <NextLink href='/works' passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('blue', 'red')}
+                colorScheme={SchemeColorTheme}
                 color='white'
-                bgColor={useColorModeValue('blue.400', 'red.400')}
+                bgColor={colorTheme}
               >
                 My portfolio
               </Button>
@@ -247,8 +252,8 @@ const Home = () => {
               <Link href='https://github.com/nineria' target='_blank'>
                 <Button
                   variant='ghost'
-                  colorScheme={useColorModeValue('blue', 'red')}
-                  color={useColorModeValue('blue.400', 'red.400')}
+                  colorScheme={SchemeColorTheme}
+                  color={colorTheme}
                   leftIcon={<IoLogoGithub />}
                 >
                   @nineria
@@ -259,8 +264,8 @@ const Home = () => {
               <Link href='https://twitter.com/nineria_nananai' target='_blank'>
                 <Button
                   variant='ghost'
-                  colorScheme={useColorModeValue('blue', 'red')}
-                  color={useColorModeValue('blue.400', 'red.400')}
+                  colorScheme={SchemeColorTheme}
+                  color={colorTheme}
                   leftIcon={<IoLogoTwitter />}
                 >
                   @nineria_nananai
@@ -271,8 +276,8 @@ const Home = () => {
               <Link href='https://instagram.com/ninerianananai' target='_blank'>
                 <Button
                   variant='ghost'
-                  colorScheme={useColorModeValue('blue', 'red')}
-                  color={useColorModeValue('blue.400', 'red.400')}
+                  colorScheme={SchemeColorTheme}
+                  color={colorTheme}
                   leftIcon={<IoLogoInstagram />}
                 >
                   @ninerianananai
@@ -286,8 +291,8 @@ const Home = () => {
               >
                 <Button
                   variant='ghost'
-                  colorScheme={useColorModeValue('blue', 'red')}
-                  color={useColorModeValue('blue.400', 'red.400')}
+                  colorScheme={SchemeColorTheme}
+                  color={colorTheme}
                   leftIcon={<IoLogoFacebook />}
                 >
                   @NineriaNananai
@@ -318,9 +323,9 @@ const Home = () => {
             <NextLink href='/posts' passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('blue', 'red')}
+                colorScheme={SchemeColorTheme}
                 color='white'
-                bgColor={useColorModeValue('blue.400', 'red.400')}
+                bgColor={colorTheme}
               >
                 All posts
               </Button>

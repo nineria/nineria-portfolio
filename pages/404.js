@@ -18,9 +18,9 @@ const NotFound = () => {
       <Box my={6} align='center'>
         <NextLink href='/' passHref>
           <Button
-            colorScheme={useColorModeValue('blue', 'red')}
+            colorScheme={useColorModeValue('red', 'purple')}
             color='white'
-            bgColor={useColorModeValue('blue.400', 'red.400')}
+            bgColor={useColorModeValue('red.400', 'purple.400')}
           >
             Return to home
           </Button>

@@ -11,16 +11,16 @@ import Image from 'next/image';
 
 import Layout from '../../components/layouts/article';
 import P from '../../components/paragraph';
-import { Meta, Title } from '../../components/work';
+import { Meta, Title, WorkImage } from '../../components/work';
 import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
-  <Layout title='MyAniCommu'>
+  <Layout title='myanicommu'>
     <Container>
       <Title>
         My Anime Community <Badge>{new Date().getFullYear()}</Badge>
       </Title>
-      <Image src={thumbMyAniCommu} alt='myanimecommunity' />
+      <Image src={thumbMyAniCommu} alt='my-anime-community' />
 
       <Heading mt={2} size='md'>
         Description
@@ -28,13 +28,16 @@ const Work = () => (
       <P>
         My Anime Community website purpose is to bring together people who like
         anime. They can come in and talk and exchange knowledge about anime,
-        manga or light novels.
+        manga, light novels and more.
       </P>
 
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href='https://myanimecommunity.vercel.app//' target='_blank'>
+          <Link
+            href='https://myanimecommunity.vercel.app/posts'
+            target='_blank'
+          >
             https://myanimecommunity.vercel.app/ <ExternalLinkIcon mx='2px' />
           </Link>
         </ListItem>
@@ -46,14 +49,40 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>NodeJS, Firebase, Next.js, Mantine, Tabler Icons</span>
         </ListItem>
-        {/* <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href='https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820'>
-            How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
-            $5/mo <ExternalLinkIcon mx='2px' />
-          </Link>
-        </ListItem> */}
       </List>
+
+      <WorkImage
+        src='/images/works/myanicommu-00.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-01.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-02.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-03.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-04.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-05.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-06.png'
+        alt='my-anime-community'
+      />
+      <WorkImage
+        src='/images/works/myanicommu-07.png'
+        alt='my-anime-community'
+      />
 
       {/* <WorkImage src='/images/works/inkdrop_01.png' alt='Inkdrop' />
       <WorkImage src='/images/works/inkdrop_02.png' alt='Inkdrop' />

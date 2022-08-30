@@ -19,11 +19,10 @@ const Works = () => (
         <Section>
           <WorkGridItem
             id='myanicommu'
-            title='MyAniCommu'
+            title='My Anime Community'
             thumbnail={thumbMyAniCommu}
           >
-            Bring together people who love anime, They can come in and talk and
-            exchange knowledge about anime, manga or light novels.
+            Exchange knowledge about anime, manga light novels and more.
           </WorkGridItem>
         </Section>
         <Section>
