@@ -304,7 +304,7 @@ const Home = () => {
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
               href='https://myanimecommunity.vercel.app/posts'
-              title='MyAniCommu'
+              title='My Anime Community'
               thumbnail={thumbMyAniCommu}
             >
               Anime news, Q&A, Review, and more
