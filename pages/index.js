@@ -97,8 +97,6 @@ const Home = () => {
             <Image
               src={headingTewarit}
               alt='Tewarit Jantarasorn'
-              width='400px'
-              height='30px'
               loading='lazy'
               placeholder='blur'
             />
@@ -140,8 +138,7 @@ const Home = () => {
               alt='skill'
               loading='lazy'
               placeholder='blur'
-            />{' '}
-            🔥
+            />
           </Heading>
           <Lists href='https://reactjs.org/'>React</Lists>
           <Lists href='https://nextjs.org/'>Next.js</Lists>
@@ -220,8 +217,11 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            Art, Music, Anime,{' '}
-            <Link href='https://illust.odoruinu.net/' target='_blank'>
+            <Link href='https://nineria.vercel.app//' target='_blank'>
+              PixelArt
+            </Link>
+            , Music, Anime,{' '}
+            <Link href='https://nineria.vercel.app//' target='_blank'>
               Drawing
             </Link>
             , Playing Guitar,{' '}
@@ -231,7 +231,7 @@ const Home = () => {
             >
               Photography
             </Link>
-            , Ridding motorbike
+            , Ridding motorbike,{' '}
           </Paragraph>
         </Section>
 
