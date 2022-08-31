@@ -31,6 +31,7 @@ import {
   IoLogoInstagram,
   IoLogoTwitter,
 } from 'react-icons/io5';
+import { RiVipCrownFill } from 'react-icons/ri';
 import Typewriter from 'typewriter-effect';
 import { BioSection, BioYear } from '../components/bio';
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
@@ -117,8 +118,16 @@ const Home = () => {
               h='100px'
               display='inline-block'
               borderRadius='full'
-              overflow='hidden'
+              // overflow='hidden'
+              pos='relative'
             >
+              <Box pos='absolute' top='-23px' right='20px' zIndex={999}>
+                <RiVipCrownFill
+                  color='#F6E05E'
+                  size='40'
+                  style={{ transform: 'rotate(10deg)' }}
+                />
+              </Box>
               <ProfileImage
                 src='/images/tewarit.png'
                 alt='Profile image'
