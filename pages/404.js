@@ -7,20 +7,30 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 import NextLink from 'next/link';
+import headingNotFound from '../public/text/not-found.png';
 
 const NotFound = () => {
   return (
     <Container>
-      <Heading as='h1'>Not found</Heading>
+      <Heading as='h1'>
+        {' '}
+        <Image
+          src={headingNotFound}
+          alt='works'
+          loading='lazy'
+          placeholder='blur'
+        />
+      </Heading>
       <Text>The page you&apos;re looking for was not found.</Text>
       <Divider my={6} />
       <Box my={6} align='center'>
         <NextLink href='/' passHref>
           <Button
-            colorScheme={useColorModeValue('red', 'purple')}
+            colorScheme={useColorModeValue('purple', 'red')}
             color='white'
-            bgColor={useColorModeValue('red.400', 'purple.400')}
+            bgColor={useColorModeValue('purple.400', 'red.400')}
           >
             Return to home
           </Button>

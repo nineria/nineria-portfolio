@@ -1,4 +1,5 @@
 import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react';
+import Image from 'next/image';
 import { WorkGridItem } from '../components/grid-item';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
@@ -7,12 +8,18 @@ import thumbFavAnimeApp from '../public/images/works/favorite_anime_app.png';
 import thumbMusicPlayerApp from '../public/images/works/music_player_app.png';
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
 import thumbSearchAlgorithm from '../public/images/works/search_algorithm.png';
-
+import headingOldWorks from '../public/text/old-works.png';
+import headingWorks from '../public/text/works.png';
 const Works = () => (
   <Layout title='Tewarit Jantarasorn - Works'>
     <Container>
       <Heading as='h3' fontSize={20} mb={4}>
-        Works
+        <Image
+          src={headingWorks}
+          alt='works'
+          loading='lazy'
+          placeholder='blur'
+        />
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -98,7 +105,12 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as='h3' fontSize={20} mb={4}>
-          Old works
+          <Image
+            src={headingOldWorks}
+            alt='works'
+            loading='lazy'
+            placeholder='blur'
+          />
         </Heading>
       </Section>
 
