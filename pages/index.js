@@ -67,13 +67,13 @@ const Home = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('สวัสดีครับ~')
+                .typeString('สวัสดี~')
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
               typewriter
                 .typeString(
-                  "Hello, I'm a front-end web developer based in Thailand!"
+                  "Hello, I'm a full-stack web developer based in Thailand!"
                 )
                 .pauseFor(5000)
                 .start();
@@ -118,7 +118,6 @@ const Home = () => {
               h='100px'
               display='inline-block'
               borderRadius='full'
-              // overflow='hidden'
               pos='relative'
             >
               <Box pos='absolute' top='-23px' right='20px' zIndex={999}>
@@ -151,14 +150,18 @@ const Home = () => {
           </Heading>
           <Lists href='https://reactjs.org/'>React</Lists>
           <Lists href='https://nextjs.org/'>Next.js</Lists>
+          {/* <Lists href='https://nodejs.org/'>Node.js</Lists> */}
+          {/* <Lists href='https://bun.sh/'>Bun.sh</Lists> */}
           <Lists>JavaScript (ES6)</Lists>
           <Lists>HTML5 </Lists>
           <Lists>CSS3 </Lists>
-          <Lists href='https://redux.js.org/'>Redux</Lists>
-          <Lists href='https://graphql.org/'>GraphQL</Lists>
+          {/* <Lists href='https://redux.js.org/'>Redux</Lists> */}
+          {/* <Lists href='https://graphql.org/'>GraphQL</Lists> */}
+
           <Lists href='https://graphql.org/'>Photoshop</Lists>
-          <Lists href='https://graphql.org/'>Asprite</Lists>
-          <Lists href='https://graphql.org/'>Blender (basic)</Lists>
+          <Lists href='https://aseprite.org/'>Asprite</Lists>
+          <Lists href='https://figma.com/'>Figma</Lists>
+          <Lists href='https://canva.com/'>Canva</Lists>
           <Spacer my={8} />
           <Heading as='h3' variant={borderLeftColor}>
             <Image
@@ -169,12 +172,13 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            Tewarit is a student and a front-end web developer based in Thailand
-            with a passion for building web services/stuff. He has a knack for
-            all things launching products, from planning and designing all the
-            way to solving real-life problems with code. When not online, he
-            loves hanging out with his camera and Motorbike (Honda phantom 200)
-            to travel. Currently, he is developing website call{' '}
+            Tewarit is a student and a full-stack developer based in Thailand
+            with a passion for building services/stuff. He is excited to learn
+            new programming features/frameworks from planning, designing, and
+            developing all the way to launching products and solving real-life
+            problems with code. When not online, he loves hanging out with his
+            camera and going to several places, he also loves to Ride a
+            Motorbike and Drawing, Currently, he is developing a website called{' '}
             <NextLink href='https://myanimecommunity.vercel.app/posts' passHref>
               <Link target='_blank'>My Anime Community</Link>
             </NextLink>
@@ -205,9 +209,9 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>2018 to present</BioYear>
-            Studying the computer science&apos;s Program in Information
+            Studying the Computer Science&apos;s Program in Information
             Technology and Innovation of Bangkok University
-            (คณะเทคโนโลยีสารสนเทศและนวัตกรรม | สาขาวิทยาการคอมพิวเตอร์ |
+            (สาขาวิทยาการคอมพิวเตอร์ | คณะเทคโนโลยีสารสนเทศและนวัตกรรม |
             มหาวิทยาลัยกรุงเทพ)
           </BioSection>
           <BioSection>
