@@ -230,16 +230,16 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            <Link href='https://nineria.vercel.app//' target='_blank'>
+            <Link href='https://nineria.vercel.app' target='_blank'>
               PixelArt
             </Link>
             , Music, Anime,{' '}
-            <Link href='https://nineria.vercel.app//' target='_blank'>
+            <Link href='https://nineria.vercel.app' target='_blank'>
               Drawing
             </Link>
             , Playing Guitar,{' '}
             <Link
-              href='https://www.instagram.com/ninerianananai/'
+              href='https://www.instagram.com/ninerianananai'
               target='_blank'
             >
               Photography

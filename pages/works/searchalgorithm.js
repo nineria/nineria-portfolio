@@ -20,11 +20,6 @@ const Work = () => (
       <Title>
         Anime Search Algorithm <Badge>2020</Badge>
       </Title>
-      {/* <P>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-        deserunt!
-      </P> */}
-      {/* <Image src={thumbMyAniCommu} alt='myanimecommunity' /> */}
 
       <List ml={4} my={4}>
         <ListItem>
@@ -43,6 +38,11 @@ const Work = () => (
           <span>Python3, Ipynb</span>
         </ListItem>
       </List>
+
+      {/* <WorkImage
+        src='/images/works/myanicommu-00.png'
+        alt='my-anime-community'
+      /> */}
     </Container>
   </Layout>
 );
