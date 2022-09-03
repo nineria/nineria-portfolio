@@ -17,7 +17,7 @@ import { Meta, Title, WorkImage } from '../../components/work';
 const Work = () => (
   <Layout title='MyAniCommu'>
     <Container>
-      <Title>
+      <Title createdDate='18 AUG, 2022'>
         Anime Search Algorithm <Badge>2020</Badge>
       </Title>
 

@@ -17,7 +17,7 @@ import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
 const Work = () => (
   <Layout title='My Anime Community'>
     <Container>
-      <Title>
+      <Title createdDate='20 AUG, 2022'>
         My Anime Community <Badge>{new Date().getFullYear()}</Badge>
       </Title>
       <Image src={thumbMyAniCommu} alt='my-anime-community' />

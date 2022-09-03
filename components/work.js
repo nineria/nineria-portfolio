@@ -1,17 +1,39 @@
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Badge, Box, Heading, Image, Link } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Heading,
+  HStack,
+  Image,
+  Link,
+  Text,
+} from '@chakra-ui/react';
 import NextLink from 'next/link';
+import { BsDot } from 'react-icons/bs';
 
-export const Title = ({ children }) => (
+export const Title = ({ children, createdDate }) => (
   <Box>
-    <NextLink href='/works' passHref>
-      <Link>Works</Link>
-    </NextLink>
-    <span>
-      {' '}
-      <ChevronRightIcon />{' '}
-    </span>
-    <Heading display='inline-block' as='h3' fontSize={20} mb={4}>
+    <HStack spacing='0.5'>
+      <Text
+        fontSize={12}
+        fontWeight={700}
+        opacity={0.6}
+        textTransform='uppercase'
+      >
+        {createdDate || new Date().toDateString()}
+      </Text>
+      <span>
+        {' '}
+        <BsDot />{' '}
+      </span>
+
+      <NextLink href='/works' passHref>
+        <Link fontSize={12} textTransform='uppercase' fontWeight={700}>
+          Works
+        </Link>
+      </NextLink>
+    </HStack>
+
+    <Heading display='inline-block' as='h3' fontSize={24} mb={4}>
       {children}
     </Heading>
   </Box>
