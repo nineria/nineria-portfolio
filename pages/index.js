@@ -208,7 +208,7 @@ const Home = () => {
             />
           </Heading>
           <BioSection>
-            <BioYear>2018 to present</BioYear>
+            <BioYear>2019 to present</BioYear>
             Studying the Computer Science&apos;s Program in Information
             Technology and Innovation of Bangkok University
             (สาขาวิทยาการคอมพิวเตอร์ | คณะเทคโนโลยีสารสนเทศและนวัตกรรม |
