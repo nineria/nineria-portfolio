@@ -155,11 +155,10 @@ const Home = () => {
           <Lists>JavaScript (ES6)</Lists>
           <Lists>HTML5 </Lists>
           <Lists>CSS3 </Lists>
-          {/* <Lists href='https://redux.js.org/'>Redux</Lists> */}
-          {/* <Lists href='https://graphql.org/'>GraphQL</Lists> */}
-
-          <Lists href='https://graphql.org/'>Photoshop</Lists>
-          <Lists href='https://aseprite.org/'>Asprite</Lists>
+          <Lists href='https://redux.js.org/'>Redux</Lists>
+          <Lists href='https://graphql.org/'>GraphQL</Lists>
+          <Lists>Photoshop</Lists>
+          <Lists href='https://aseprite.org/'>Asprite (Pixel Art)</Lists>
           <Lists href='https://figma.com/'>Figma</Lists>
           <Lists href='https://canva.com/'>Canva</Lists>
           <Spacer my={8} />
