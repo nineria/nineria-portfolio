@@ -4,17 +4,19 @@ import {
   Button,
   chakra,
   Container,
+  Flex,
   Heading,
   Link,
   List,
   ListItem,
   SimpleGrid,
   Spacer,
+  Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { GridItem } from '@components/grid-item';
 import Layout from '@components/layouts/article';
-import Lists from '@components/lists';
+import { Group, Member } from '@components/lists';
 import Paragraph from '@components/paragraph';
 import Section from '@components/section';
 import headingBio from '@public/text/bio.png';
@@ -73,7 +75,7 @@ const Home = () => {
                 .start();
               typewriter
                 .typeString(
-                  "Hello, I'm a full-stack web developer based in Thailand!"
+                  "Hello, I'm a Full-Stack web developer based in Thailand!"
                 )
                 .pauseFor(5000)
                 .start();
@@ -101,11 +103,16 @@ const Home = () => {
               loading='lazy'
               placeholder='blur'
             />
-            <p>Web Developer (Artist / Photographer / Guitarist )</p>
+            <Flex flexDir={{ base: 'column', md: 'row' }}>
+              <Text w='full'>Web Developer</Text>
+              <Text w='full' whiteSpace='nowrap'>
+                (Artist / Photographer / Guitarist )
+              </Text>
+            </Flex>
           </Box>
           <Box
             flexShrink={0}
-            mt={{ base: 4, md: 0 }}
+            my={{ base: 10, md: 0 }}
             ml={{ md: 6 }}
             textAlign='center'
           >
@@ -133,35 +140,13 @@ const Home = () => {
                 borderRadius='full'
                 width='100%'
                 height='100%'
-                bgColor={useColorModeValue('purple.100', 'red.200')}
+                bgColor={useColorModeValue('purple.100', 'red.300')}
               />
             </Box>
           </Box>
         </Box>
 
         <Section delay={0.1}>
-          <Heading as='h3' variant={borderLeftColor} className='css-shake'>
-            <Image
-              src={headingSkill}
-              alt='skill'
-              loading='lazy'
-              placeholder='blur'
-            />
-          </Heading>
-          <Lists href='https://reactjs.org/'>React</Lists>
-          <Lists href='https://nextjs.org/'>Next.js</Lists>
-          {/* <Lists href='https://nodejs.org/'>Node.js</Lists> */}
-          {/* <Lists href='https://bun.sh/'>Bun.sh</Lists> */}
-          <Lists>JavaScript (ES6)</Lists>
-          <Lists>HTML5 </Lists>
-          <Lists>CSS3 </Lists>
-          <Lists href='https://redux.js.org/'>Redux</Lists>
-          <Lists href='https://graphql.org/'>GraphQL</Lists>
-          <Lists>Photoshop</Lists>
-          <Lists href='https://aseprite.org/'>Asprite (Pixel Art)</Lists>
-          <Lists href='https://figma.com/'>Figma</Lists>
-          <Lists href='https://canva.com/'>Canva</Lists>
-          <Spacer my={8} />
           <Heading as='h3' variant={borderLeftColor}>
             <Image
               src={headingWork}
@@ -171,13 +156,13 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            Tewarit is a student and a full-stack developer based in Thailand
-            with a passion for building services/stuff. He is excited to learn
-            new programming features/frameworks from planning, designing, and
-            developing all the way to launching products and solving real-life
-            problems with code. When not online, he loves hanging out with his
-            camera and going to several places, he also loves to Ride a
-            Motorbike and Drawing, Currently, he is developing a website called{' '}
+            I&apos;m a Full-Stack web developer with a passion for building web
+            services/stuff. I&apos;m excited to learn new programming features
+            and frameworks, from planning, designing, and developing to
+            launching products and solving real-life problems with code. When
+            not online, I like to hang out with my camera and travel to several
+            places, I also love to ride motorcycles and draw. Currently,
+            I&apos;m developing a website called{' '}
             <NextLink href='https://myanimecommunity.vercel.app/posts' passHref>
               <Link target='_blank'>My Anime Community</Link>
             </NextLink>
@@ -250,6 +235,43 @@ const Home = () => {
         <Section delay={0.3}>
           <Heading as='h3' variant={borderLeftColor}>
             <Image
+              src={headingSkill}
+              alt='skill'
+              loading='lazy'
+              placeholder='blur'
+            />
+          </Heading>
+          <Group title='Scripts & Frameworks'>
+            <Member>HTML5 </Member>
+            <Member>CSS3 </Member>
+            <Member>JavaScript (ES6)</Member>
+
+            <Member href='https://nextjs.org/'>Next.js</Member>
+            <Member href='https://reactjs.org/'>React</Member>
+            <Member href='https://redux.js.org/'>Redux</Member>
+            <Member href='https://graphql.org/'>GraphQL</Member>
+
+            {/* <Member href='https://bun.sh/'>Bun.sh</Member>
+            <Member href='https://nodejs.org/'>Node.js</Member> */}
+          </Group>
+
+          <Group title='UX/UI'>
+            <Member href='https://www.adobe.com/'>Adobe Photoshop</Member>
+            <Member href='https://aseprite.org/'>Asprite (Pixel Art)</Member>
+            <Member href='https://canva.com/'>Canva</Member>
+            <Member href='https://figma.com/'>Figma</Member>
+          </Group>
+
+          <Group title='Database'>
+            <Member href='https://firebase.google.com/'>Firebase</Member>
+            <Member href='https://mongodb.com/'>MongoDB</Member>
+            <Member href='https://redis.io/'>Radis</Member>
+          </Group>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as='h3' variant={borderLeftColor}>
+            <Image
               src={headingSocial}
               alt='social'
               loading='lazy'
@@ -317,7 +339,7 @@ const Home = () => {
               title='My Anime Community'
               thumbnail={thumbMyAniCommu}
             >
-              Anime news, Q&A, Review, and more
+              Anime News, Q&A, Review, and more
             </GridItem>
             <GridItem
               href='https://github.com/nineria/AnimeListApi/blob/main/AnimeRecomendation.ipynb'
