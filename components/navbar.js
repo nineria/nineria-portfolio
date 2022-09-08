@@ -28,6 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         p={2}
         bg={active ? activeBgColor : undefined}
         color={active ? 'white' : inactiveColor}
+        roundedTop='md'
         target={target}
         {...props}
       >
