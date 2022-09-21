@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Footer from '../footer';
 import NavBar from '../navbar';
-import VoxelDogLoader from '../voxel-dog-loader';
+import ThreeDModelLoader from '../three-d-model-loader';
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+const LazyLoadThreeDModel = dynamic(() => import('../three-d-model'), {
   ssr: false,
-  loading: () => <VoxelDogLoader />,
+  loading: () => <ThreeDModelLoader />,
 });
 
 const Main = ({ children, router }) => {
@@ -38,8 +38,8 @@ const Main = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
-      <Container maxW='container.md' p={0} pt={14}>
-        <LazyVoxelDog />
+      <Container maxW='container.md' p={0} pt={14} pos='relative'>
+        <LazyLoadThreeDModel />
 
         {children}
 

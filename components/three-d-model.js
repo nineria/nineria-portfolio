@@ -1,14 +1,15 @@
+import { motion } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { loadGLTFModel } from '../lib/model';
-import { DogContainer, DogSpinner } from './voxel-dog-loader';
+import { ModelContainer, ModelSpinner } from './three-d-model-loader';
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
-const VoxelDog = () => {
+const ThreeDModel = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
@@ -50,8 +51,6 @@ const VoxelDog = () => {
         20 * Math.cos(0.2 * Math.PI)
       );
 
-      // 640 -> 240
-      // 8   -> 6
       const scale = scH * 0.001 + 4;
       const camera = new THREE.OrthographicCamera(
         -scale,
@@ -119,8 +118,16 @@ const VoxelDog = () => {
   }, [handleWindowResize]);
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <motion.div
+      initial={{ y: -200 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <ModelContainer ref={refContainer}>
+        {loading && <ModelSpinner />}
+      </ModelContainer>
+    </motion.div>
   );
 };
 
-export default VoxelDog;
+export default ThreeDModel;

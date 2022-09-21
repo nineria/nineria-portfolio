@@ -25,7 +25,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
-            id='myanicommu'
+            id='my-anime-community'
             title='My Anime Community'
             thumbnail={thumbMyAniCommu}
           >
@@ -34,7 +34,7 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            id='searchalgorithm'
+            id='search-algorithm'
             title='Anime Search Algorithm'
             thumbnail={thumbSearchAlgorithm}
           >

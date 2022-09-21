@@ -1,7 +1,8 @@
 import { Box, Spinner } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import { forwardRef } from 'react';
 
-export const DogSpinner = () => (
+export const ModelSpinner = () => (
   <Spinner
     size='xl'
     position='absolute'
@@ -12,10 +13,10 @@ export const DogSpinner = () => (
   />
 );
 
-export const DogContainer = forwardRef(({ children }, ref) => (
+export const ModelContainer = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
-    className='voxel-dog'
+    className='three-d-model'
     m='auto'
     mt={['-20px', '-60px', '-120px']}
     mb={['-40px', '-140px', '-200px']}
@@ -27,13 +28,13 @@ export const DogContainer = forwardRef(({ children }, ref) => (
   </Box>
 ));
 
-DogContainer.displayName == 'container';
+ModelContainer.displayName == 'container';
 
 const Loader = () => {
   return (
-    <DogContainer>
-      <DogSpinner />
-    </DogContainer>
+    <ModelContainer>
+      <ModelSpinner />
+    </ModelContainer>
   );
 };
 

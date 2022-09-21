@@ -118,7 +118,7 @@ const Navbar = (props) => {
                   as={Link}
                   href='https://github.com/nineria/nineria-portfolio'
                 >
-                  View Source
+                  Source Code
                 </MenuItem>
               </MenuList>
             </Menu>
