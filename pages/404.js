@@ -15,7 +15,6 @@ const NotFound = () => {
   return (
     <Container>
       <Heading as='h1'>
-        {' '}
         <Image
           src={headingNotFound}
           alt='works'

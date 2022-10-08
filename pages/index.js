@@ -284,7 +284,7 @@ const Home = () => {
               />
             </MemberIcon>
             <MemberIcon
-              label='JavaScript ES6'
+              label='JavaScript'
               padding='8px'
               href='https://www.w3schools.com/js/default.asp'
             >
@@ -297,7 +297,7 @@ const Home = () => {
               />
             </MemberIcon>
             <MemberIcon
-              label='JavaScript ES6'
+              label='TypeScript'
               padding='8px'
               href='https://www.w3schools.com/typescript/index.php'
             >
