@@ -6,11 +6,6 @@ const HeadingStyle = styled.p`
   font-weight: bold;
 `;
 
-export const Member = styled.li`
-  text-align: justify;
-  text-indent: 1em;
-`;
-
 const MemberIconStyle = styled.div`
   position: relative;
   background-color: ${(props) =>
