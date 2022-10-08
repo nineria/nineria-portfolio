@@ -16,9 +16,25 @@ import {
 } from '@chakra-ui/react';
 import { GridItem } from '@components/grid-item';
 import Layout from '@components/layouts/article';
-import { Group, Member } from '@components/lists';
+import { Group, MemberIcon } from '@components/lists';
 import Paragraph from '@components/paragraph';
 import Section from '@components/section';
+import aseprite from '@public/images/skills/aseprite.svg';
+import canva from '@public/images/skills/canva.svg';
+import css3 from '@public/images/skills/css-3.svg';
+import figma from '@public/images/skills/figma.svg';
+import firebase from '@public/images/skills/firebase.svg';
+import graphql from '@public/images/skills/graphql.svg';
+import html5 from '@public/images/skills/html-5.svg';
+import js from '@public/images/skills/js.svg';
+import mongodb from '@public/images/skills/mongodb.svg';
+import nextDotJs from '@public/images/skills/next-dot-js.svg';
+import nodeJs from '@public/images/skills/node-js.svg';
+import photoshop from '@public/images/skills/photoshop.svg';
+import react from '@public/images/skills/react.svg';
+import redis from '@public/images/skills/redis.svg';
+import redux from '@public/images/skills/redux.svg';
+import ts from '@public/images/skills/typescript.svg';
 import headingBio from '@public/text/bio.png';
 import headingHobby from '@public/text/hobby.png';
 import headingSkill from '@public/text/skill.png';
@@ -242,30 +258,192 @@ const Home = () => {
             />
           </Heading>
           <Group title='Scripts & Frameworks'>
-            <Member>HTML5 </Member>
-            <Member>CSS3 </Member>
-            <Member>JavaScript (ES6)</Member>
+            <MemberIcon
+              label='HyperText Markup Language (HTML) 5'
+              href='https://www.w3schools.com/html/default.asp'
+            >
+              <Image
+                src={html5}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
 
-            <Member href='https://nextjs.org/'>Next.js</Member>
-            <Member href='https://reactjs.org/'>React</Member>
-            <Member href='https://redux.js.org/'>Redux</Member>
-            <Member href='https://graphql.org/'>GraphQL</Member>
-
-            {/* <Member href='https://bun.sh/'>Bun.sh</Member>
-            <Member href='https://nodejs.org/'>Node.js</Member> */}
+            <MemberIcon
+              label='Cascading Style Sheets (CSS) 3'
+              href='https://www.w3schools.com/css/default.asp'
+            >
+              <Image
+                src={css3}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='JavaScript ES6'
+              padding='8px'
+              href='https://www.w3schools.com/js/default.asp'
+            >
+              <Image
+                src={js}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='JavaScript ES6'
+              padding='8px'
+              href='https://www.w3schools.com/typescript/index.php'
+            >
+              <Image
+                src={ts}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='Next.js' color='#fff' href='https://nextjs.org/'>
+              <Image
+                src={nextDotJs}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='React'
+              href='https://www.w3schools.com/react/default.asp'
+            >
+              <Image
+                src={react}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='Redux'
+              padding='8px'
+              href='https://redux.js.org/'
+            >
+              <Image
+                src={redux}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='GraphQL' href='https://graphql.org/'>
+              <Image
+                src={graphql}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='NodeJS'
+              href='https://www.w3schools.com/nodejs/default.asp'
+            >
+              <Image
+                src={nodeJs}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
           </Group>
 
           <Group title='UX/UI'>
-            <Member href='https://www.adobe.com/'>Adobe Photoshop</Member>
-            <Member href='https://aseprite.org/'>Asprite (Pixel Art)</Member>
-            <Member href='https://canva.com/'>Canva</Member>
-            <Member href='https://figma.com/'>Figma</Member>
+            <MemberIcon
+              label='Adobe Photoshop'
+              href='https://www.adobe.com/products/photoshop.html'
+            >
+              <Image
+                src={photoshop}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='Aseprite'
+              color='#fff'
+              href='https://www.aseprite.org/'
+            >
+              <Image
+                src={aseprite}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='Canva'
+              color='#fff'
+              href='https://www.canva.com/'
+            >
+              <Image
+                src={canva}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='Figma' href='https://www.figma.com/'>
+              <Image
+                src={figma}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
           </Group>
 
           <Group title='Database'>
-            <Member href='https://firebase.google.com/'>Firebase</Member>
-            <Member href='https://mongodb.com/'>MongoDB</Member>
-            <Member href='https://redis.io/'>Radis</Member>
+            <MemberIcon label='Firebase' href='https://firebase.google.com/'>
+              <Image
+                src={firebase}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='MongoDB' href='https://www.mongodb.com/'>
+              <Image
+                src={mongodb}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='Redis' href='https://redis.io/'>
+              <Image
+                src={redis}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
           </Group>
         </Section>
 
