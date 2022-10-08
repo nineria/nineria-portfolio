@@ -1,7 +1,7 @@
-import { Box, Flex, Link, Tooltip, useColorModeValue } from '@chakra-ui/react';
+import { Box, Link, Tooltip, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
-export const HeadingStyle = styled.p`
+const HeadingStyle = styled.p`
   text-align: justify;
   font-weight: bold;
 `;
@@ -11,7 +11,7 @@ export const Member = styled.li`
   text-indent: 1em;
 `;
 
-export const MemberIconStyle = styled.div`
+const MemberIconStyle = styled.div`
   position: relative;
   background-color: ${(props) =>
     props.color || useColorModeValue('#fff', '#333')};
@@ -25,6 +25,13 @@ export const MemberIconStyle = styled.div`
   &:hover {
     opacity: 0.7;
   }
+`;
+
+const Flex = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
 `;
 
 export const MemberIcon = ({
@@ -46,9 +53,7 @@ export const MemberIcon = ({
 export const Group = ({ title, children }) => (
   <Box mb={2}>
     <HeadingStyle>{title}</HeadingStyle>
-    <Flex gap={2} m={4}>
-      {children}
-    </Flex>
+    <Flex>{children}</Flex>
   </Box>
 );
 

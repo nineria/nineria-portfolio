@@ -369,6 +369,7 @@ const Home = () => {
           <Group title='UX/UI'>
             <MemberIcon
               label='Adobe Photoshop'
+              padding='6px'
               href='https://www.adobe.com/products/photoshop.html'
             >
               <Image
