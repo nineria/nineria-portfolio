@@ -1,5 +1,4 @@
 import { Box, Spinner } from '@chakra-ui/react';
-import styled from '@emotion/styled';
 import { forwardRef } from 'react';
 
 export const ModelSpinner = () => (

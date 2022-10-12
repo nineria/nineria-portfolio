@@ -19,6 +19,7 @@ const MemberIconStyle = styled.div`
   transition: 0.35s ease-out;
   &:hover {
     opacity: 0.7;
+    transform: translateY(-3px);
   }
 `;
 
@@ -51,15 +52,3 @@ export const Group = ({ title, children }) => (
     <Flex>{children}</Flex>
   </Box>
 );
-
-// const Lists = ({ href = '/', children }) => {
-//   return (
-//     <StyledList>
-//       <NextLink href={href} passHref>
-//         <Link target='_blank' color='#fff'>
-//           {children}
-//         </Link>
-//       </NextLink>
-//     </StyledList>
-//   );
-// };

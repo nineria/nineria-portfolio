@@ -9,10 +9,10 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 
-import Layout from '../../components/layouts/article';
-import P from '../../components/paragraph';
-import { Meta, Title, WorkImage } from '../../components/work';
-import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
+import Layout from '@components/layouts/article';
+import P from '@components/paragraph';
+import { Meta, Title, WorkImage } from '@components/work';
+import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
 
 const Work = () => (
   <Layout title='My Anime Community'>

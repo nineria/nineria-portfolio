@@ -14,33 +14,40 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { BioSection, BioYear } from '@components/bio';
 import { GridItem } from '@components/grid-item';
+import {
+  headingBio,
+  headingHobby,
+  headingSkill,
+  headingSocial,
+  headingTewarit,
+  headingWork,
+} from '@components/headers';
 import Layout from '@components/layouts/article';
 import { Group, MemberIcon } from '@components/lists';
 import Paragraph from '@components/paragraph';
 import Section from '@components/section';
-import aseprite from '@public/images/skills/aseprite.svg';
-import canva from '@public/images/skills/canva.svg';
-import css3 from '@public/images/skills/css-3.svg';
-import figma from '@public/images/skills/figma.svg';
-import firebase from '@public/images/skills/firebase.svg';
-import graphql from '@public/images/skills/graphql.svg';
-import html5 from '@public/images/skills/html-5.svg';
-import js from '@public/images/skills/js.svg';
-import mongodb from '@public/images/skills/mongodb.svg';
-import nextDotJs from '@public/images/skills/next-dot-js.svg';
-import nodeJs from '@public/images/skills/node-js.svg';
-import photoshop from '@public/images/skills/photoshop.svg';
-import react from '@public/images/skills/react.svg';
-import redis from '@public/images/skills/redis.svg';
-import redux from '@public/images/skills/redux.svg';
-import ts from '@public/images/skills/typescript.svg';
-import headingBio from '@public/text/bio.png';
-import headingHobby from '@public/text/hobby.png';
-import headingSkill from '@public/text/skill.png';
-import headingSocial from '@public/text/social.png';
-import headingTewarit from '@public/text/tewarit.png';
-import headingWork from '@public/text/work.png';
+import {
+  aseprite,
+  canva,
+  css3,
+  figma,
+  firebase,
+  graphql,
+  html5,
+  js,
+  mongodb,
+  nextDotJs,
+  nodeJs,
+  photoshop,
+  react,
+  redis,
+  redux,
+  ts,
+} from '@components/skills';
+import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
+import thumbAnimeSearchAlgorithm from '@public/images/works/search_algorithm.png';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import {
@@ -51,9 +58,6 @@ import {
 } from 'react-icons/io5';
 import { RiVipCrownFill } from 'react-icons/ri';
 import Typewriter from 'typewriter-effect';
-import { BioSection, BioYear } from '../components/bio';
-import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
-import thumbAnimeSearchAlgorithm from '../public/images/works/search_algorithm.png';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),

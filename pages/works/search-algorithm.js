@@ -1,18 +1,7 @@
 import { ExternalLinkIcon } from '@chakra-ui/icons';
-import {
-  AspectRatio,
-  Badge,
-  Container,
-  Link,
-  List,
-  ListItem,
-} from '@chakra-ui/react';
-import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
+import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react';
 import Layout from '../../components/layouts/article';
-import P from '../../components/paragraph';
-import { Meta, Title, WorkImage } from '../../components/work';
-// import thumbMyAniCommu from '../../public/images/works/myanicommu_thumb.png';
+import { Meta, Title } from '../../components/work';
 
 const Work = () => (
   <Layout title='MyAniCommu'>
