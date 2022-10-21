@@ -89,14 +89,12 @@ const Home = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('สวัสดี~')
+                .typeString('Hello, ~')
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
               typewriter
-                .typeString(
-                  "Hello, I'm a Full-Stack web developer based in Thailand!"
-                )
+                .typeString("I'm a Full-Stack web developer based in Thailand!")
                 .pauseFor(5000)
                 .start();
             }}
