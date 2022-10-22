@@ -79,7 +79,7 @@ const Navbar = (props) => {
           </LinkItem>
           <LinkItem
             target='_blank'
-            href='https://github.com/nineria/nineria-portfolio'
+            href='https://github.com/nineria'
             path={path}
             display='inline-flex'
             alignItems='center'
@@ -87,7 +87,7 @@ const Navbar = (props) => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            GitHub
           </LinkItem>
         </Stack>
 
