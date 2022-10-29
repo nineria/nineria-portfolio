@@ -34,6 +34,7 @@ import {
   css3,
   figma,
   firebase,
+  framer,
   graphql,
   html5,
   js,
@@ -360,6 +361,19 @@ const Home = () => {
             >
               <Image
                 src={nodeJs}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon
+              label='Framer Motion'
+              href='https://www.framer.com/motion/'
+              color='#fff'
+            >
+              <Image
+                src={framer}
                 alt='skill'
                 loading='lazy'
                 width={40}

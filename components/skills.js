@@ -3,6 +3,7 @@ export { default as canva } from '@public/images/skills/canva.svg';
 export { default as css3 } from '@public/images/skills/css-3.svg';
 export { default as figma } from '@public/images/skills/figma.svg';
 export { default as firebase } from '@public/images/skills/firebase.svg';
+export { default as framer } from '@public/images/skills/framer.svg';
 export { default as graphql } from '@public/images/skills/graphql.svg';
 export { default as html5 } from '@public/images/skills/html-5.svg';
 export { default as js } from '@public/images/skills/js.svg';
