@@ -182,7 +182,7 @@ const Home = () => {
             not online, I like to hang out with my camera and travel to several
             places, I also love to ride motorcycles and draw. Currently,
             I&apos;m developing a website called{' '}
-            <NextLink href='https://myanimecommunity.vercel.app/posts' passHref>
+            <NextLink href='https://myanimecommunity.vercel.app' passHref>
               <Link target='_blank'>My Anime Community</Link>
             </NextLink>
             .
@@ -530,7 +530,7 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              href='https://myanimecommunity.vercel.app/posts'
+              href='https://myanimecommunity.vercel.app'
               title='My Anime Community'
               thumbnail={thumbMyAniCommu}
             >
