@@ -1,3 +1,4 @@
+export { default as angular } from '@public/images/skills/angular.svg';
 export { default as aseprite } from '@public/images/skills/aseprite.svg';
 export { default as canva } from '@public/images/skills/canva.svg';
 export { default as css3 } from '@public/images/skills/css-3.svg';
@@ -11,6 +12,7 @@ export { default as mongodb } from '@public/images/skills/mongodb.svg';
 export { default as nextDotJs } from '@public/images/skills/next-dot-js.svg';
 export { default as nodeJs } from '@public/images/skills/node-js.svg';
 export { default as photoshop } from '@public/images/skills/photoshop.svg';
+export { default as pocketbase } from '@public/images/skills/pocketbase.svg';
 export { default as react } from '@public/images/skills/react.svg';
 export { default as redis } from '@public/images/skills/redis.svg';
 export { default as redux } from '@public/images/skills/redux.svg';

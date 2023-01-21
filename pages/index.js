@@ -29,6 +29,7 @@ import { Group, MemberIcon } from '@components/lists';
 import Paragraph from '@components/paragraph';
 import Section from '@components/section';
 import {
+  angular,
   aseprite,
   canva,
   css3,
@@ -42,6 +43,7 @@ import {
   nextDotJs,
   nodeJs,
   photoshop,
+  pocketbase,
   react,
   redis,
   redux,
@@ -125,7 +127,7 @@ const Home = () => {
             <Flex flexDir={{ base: 'column', md: 'row' }}>
               <Text w='full'>Web Developer</Text>
               <Text w='full' whiteSpace='nowrap'>
-                (Artist / Photographer / Guitarist )
+                (Artist / Photographer / Designer )
               </Text>
             </Flex>
           </Box>
@@ -176,12 +178,12 @@ const Home = () => {
           </Heading>
           <Paragraph>
             I&apos;m a Full-Stack web developer with a passion for building web
-            services/stuff. I&apos;m excited to learn new programming features
-            and frameworks, from planning, designing, and developing to
-            launching products and solving real-life problems with code. When
-            not online, I like to hang out with my camera and travel to several
-            places, I also love to ride motorcycles and draw. Currently,
-            I&apos;m developing a website called{' '}
+            services etc. I&apos;m excited to learn new programming features and
+            frameworks, from planning, designing, and developing to launching
+            products and solving real-life problems with code. When not online,
+            I like to hang out with my camera and travel to several places, I
+            also love to ride motorcycles and draw. Currently, I&apos;m
+            developing a website called{' '}
             <NextLink href='https://myanimecommunity.vercel.app' passHref>
               <Link target='_blank'>My Anime Community</Link>
             </NextLink>
@@ -210,6 +212,10 @@ const Home = () => {
               placeholder='blur'
             />
           </Heading>
+          <BioSection>
+            <BioYear>2023 to present</BioYear>
+            Internship at Solution Mania Co.,Ltd.
+          </BioSection>
           <BioSection>
             <BioYear>2019 to present</BioYear>
             Studying the Computer Science&apos;s Program in Information
@@ -380,6 +386,15 @@ const Home = () => {
                 height={40}
               />
             </MemberIcon>
+            <MemberIcon label='Angular' href='https://angular.io/' color='#fff'>
+              <Image
+                src={angular}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
           </Group>
 
           <Group title='UX/UI'>
@@ -455,6 +470,15 @@ const Home = () => {
             <MemberIcon label='Redis' href='https://redis.io/'>
               <Image
                 src={redis}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='PocketBase' href='https://pocketbase.io/'>
+              <Image
+                src={pocketbase}
                 alt='skill'
                 loading='lazy'
                 width={40}
