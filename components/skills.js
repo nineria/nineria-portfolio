@@ -17,3 +17,4 @@ export { default as react } from '@public/images/skills/react.svg';
 export { default as redis } from '@public/images/skills/redis.svg';
 export { default as redux } from '@public/images/skills/redux.svg';
 export { default as ts } from '@public/images/skills/typescript.svg';
+export { default as vue } from '@public/images/skills/vue.svg';

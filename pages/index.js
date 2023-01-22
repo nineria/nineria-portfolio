@@ -48,6 +48,7 @@ import {
   redis,
   redux,
   ts,
+  vue,
 } from '@components/skills';
 import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
 import thumbAnimeSearchAlgorithm from '@public/images/works/search_algorithm.png';
@@ -386,9 +387,18 @@ const Home = () => {
                 height={40}
               />
             </MemberIcon>
-            <MemberIcon label='Angular' href='https://angular.io/' color='#fff'>
+            <MemberIcon label='Angular' href='https://angular.io/'>
               <Image
                 src={angular}
+                alt='skill'
+                loading='lazy'
+                width={40}
+                height={40}
+              />
+            </MemberIcon>
+            <MemberIcon label='Vue' href='https://vuejs.org/'>
+              <Image
+                src={vue}
                 alt='skill'
                 loading='lazy'
                 width={40}
