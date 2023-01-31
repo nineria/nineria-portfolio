@@ -124,6 +124,7 @@ const Home = () => {
               alt='Tewarit Jantarasorn'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
             <Flex flexDir={{ base: 'column', md: 'row' }}>
               <Text w='full'>Web Developer</Text>
@@ -163,6 +164,7 @@ const Home = () => {
                 width='100%'
                 height='100%'
                 bgColor={useColorModeValue('purple.100', 'red.300')}
+                pointerEvents='none'
               />
             </Box>
           </Box>
@@ -175,6 +177,7 @@ const Home = () => {
               alt='work'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
           </Heading>
           <Paragraph>
@@ -211,6 +214,7 @@ const Home = () => {
               alt='bio'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
           </Heading>
           <BioSection>
@@ -237,6 +241,7 @@ const Home = () => {
               alt='hobby'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
           </Heading>
           <Paragraph>
@@ -265,6 +270,7 @@ const Home = () => {
               alt='skill'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
           </Heading>
           <Group title='Scripts & Frameworks'>
@@ -505,6 +511,7 @@ const Home = () => {
               alt='social'
               loading='lazy'
               placeholder='blur'
+              style={{ pointerEvents: 'none' }}
             />
           </Heading>
           <List>
