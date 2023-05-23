@@ -1,4 +1,4 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
@@ -12,15 +12,15 @@ import {
   MenuList,
   Stack,
   useColorModeValue,
-} from '@chakra-ui/react';
-import NextLink from 'next/link';
-import { IoLogoGithub } from 'react-icons/io5';
-import Logo from './logo';
-import ThemeToggleButton from './theme-toggle-button';
+} from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { IoLogoGithub } from 'react-icons/io5'
+import Logo from './logo'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href;
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
+  const active = path === href
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -33,26 +33,27 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         {children}
       </Link>
     </NextLink>
-  );
-};
+  )
+}
 
 const Navbar = (props) => {
-  const { path } = props;
+  const { path } = props
 
   return (
     <Box
       position='fixed'
       as='nav'
       w='100%'
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      css={{
+        backdropFilter: 'blur(10px)',
+        backgroundColor: useColorModeValue('#f7ecde', 'rgba(52, 58, 64, 0.5)'),
+      }}
       zIndex={2}
       {...props}
     >
       <Container
         display='flex'
         p={2}
-        maxW='container.md'
         wrap='wrap'
         align='center'
         justify='space-between'
@@ -121,7 +122,7 @@ const Navbar = (props) => {
         </Box>
       </Container>
     </Box>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
