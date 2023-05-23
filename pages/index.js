@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
   Box,
   Button,
@@ -13,9 +13,9 @@ import {
   Spacer,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { BioSection, BioYear } from '@components/bio';
-import { GridItem } from '@components/grid-item';
+} from '@chakra-ui/react'
+import { BioSection, BioYear } from '@components/bio'
+import { GridItem } from '@components/grid-item'
 import {
   headingBio,
   headingHobby,
@@ -23,11 +23,12 @@ import {
   headingSocial,
   headingTewarit,
   headingWork,
-} from '@components/headers';
-import Layout from '@components/layouts/article';
-import { Group, MemberIcon } from '@components/lists';
-import Paragraph from '@components/paragraph';
-import Section from '@components/section';
+} from '@components/headers'
+import KoFi from '@components/ko-fi'
+import Layout from '@components/layouts/article'
+import { Group, MemberIcon } from '@components/lists'
+import Paragraph from '@components/paragraph'
+import Section from '@components/section'
 import {
   angular,
   aseprite,
@@ -49,29 +50,29 @@ import {
   redux,
   ts,
   vue,
-} from '@components/skills';
-import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
-import thumbAnimeSearchAlgorithm from '@public/images/works/search_algorithm.png';
-import Image from 'next/image';
-import NextLink from 'next/link';
+} from '@components/skills'
+import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png'
+import thumbAnimeSearchAlgorithm from '@public/images/works/search_algorithm.png'
+import Image from 'next/image'
+import NextLink from 'next/link'
 import {
   IoLogoFacebook,
   IoLogoGithub,
   IoLogoInstagram,
   IoLogoTwitter,
-} from 'react-icons/io5';
-import { RiVipCrownFill } from 'react-icons/ri';
-import Typewriter from 'typewriter-effect';
+} from 'react-icons/io5'
+import { RiVipCrownFill } from 'react-icons/ri'
+import Typewriter from 'typewriter-effect'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
-});
+})
 
 const Home = () => {
-  const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`;
+  const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`
 
-  const SchemeColorTheme = useColorModeValue('purple', 'red');
-  const colorTheme = useColorModeValue('purple.400', 'red.400');
+  const SchemeColorTheme = useColorModeValue('purple', 'red')
+  const colorTheme = useColorModeValue('purple.400', 'red.400')
 
   return (
     <Layout>
@@ -96,11 +97,11 @@ const Home = () => {
                 .typeString('Hello, ~')
                 .pauseFor(1000)
                 .deleteAll()
-                .start();
+                .start()
               typewriter
                 .typeString("I'm a Full-Stack web developer based in Thailand!")
                 .pauseFor(5000)
-                .start();
+                .start()
             }}
           />
 
@@ -567,6 +568,11 @@ const Home = () => {
               </Link>
             </ListItem>
           </List>
+
+          <Spacer my={8} />
+
+          <KoFi />
+
           <Spacer my={8} />
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -601,8 +607,8 @@ const Home = () => {
         </Section>
       </Container>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
-export { getServerSideProps } from '../components/chakra';
+export default Home
+export { getServerSideProps } from '../components/chakra'
