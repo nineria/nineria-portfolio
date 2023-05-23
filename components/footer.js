@@ -1,4 +1,4 @@
-import { Box, Link, Stack } from '@chakra-ui/react';
+import { Box, Image, Link, Stack } from '@chakra-ui/react'
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
         </Link>
       </Box>
     </Stack>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
