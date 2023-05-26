@@ -14,7 +14,7 @@ import P from '@components/paragraph'
 import Image from 'next/image'
 
 const Work = () => (
-  <Layout title='MyAniCommu'>
+  <Layout title='Search Algorithm'>
     <Container>
       <Title createdDate='18 AUG, 2022'>
         Anime Search Algorithm <Badge>2020</Badge>

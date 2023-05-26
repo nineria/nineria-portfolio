@@ -16,7 +16,7 @@ import { Meta, Title, WorkImage } from '@components/work'
 import thumbWeatherApp from '@public/images/works/weather-app.png'
 
 const Work = () => (
-  <Layout title='Internship Exvention'>
+  <Layout title='Weather App'>
     <Container>
       <Title createdDate='20 AUG, 2022'>
         Weather App <Badge>2021</Badge>

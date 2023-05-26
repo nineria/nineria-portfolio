@@ -16,7 +16,7 @@ import { Meta, Title, WorkImage } from '@components/work'
 import thumbRedditCloneJoin from '@public/images/works/reddit-clone-join.png'
 
 const Work = () => (
-  <Layout title='Internship Exvention'>
+  <Layout title='Reddit Clone'>
     <Container>
       <Title createdDate='20 AUG, 2022'>
         Reddit clone with Next.js <Badge>2022</Badge>
