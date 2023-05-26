@@ -1,15 +1,18 @@
-import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react';
-import Image from 'next/image';
-import { WorkGridItem } from '../components/grid-item';
-import Layout from '../components/layouts/article';
-import Section from '../components/section';
-import thumbCafeApp from '../public/images/works/cafe_app.png';
-import thumbFavAnimeApp from '../public/images/works/favorite_anime_app.png';
-import thumbMusicPlayerApp from '../public/images/works/music_player_app.png';
-import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
-import thumbSearchAlgorithm from '../public/images/works/search_algorithm.png';
-import headingOldWorks from '../public/text/old-works.png';
-import headingWorks from '../public/text/works.png';
+import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react'
+import Image from 'next/image'
+import { WorkGridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
+import Section from '../components/section'
+import thumbCafeApp from '../public/images/works/cafe_app.png'
+import thumbFavAnimeApp from '../public/images/works/favorite_anime_app.png'
+import thumbMusicPlayerApp from '../public/images/works/music_player_app.png'
+import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png'
+import thumbSearchAlgorithm from '../public/images/works/search-algorithm.png'
+import thumbHrExvention from '../public/images/works/hr-exvention.png'
+import thumbRedditCloneJoin from '@public/images/works/reddit-clone-join.png'
+import thumbWeatherApp from '@public/images/works/weather-app.png'
+import headingOldWorks from '../public/text/old-works.png'
+import headingWorks from '../public/text/works.png'
 const Works = () => (
   <Layout title='Tewarit Jantarasorn - Works'>
     <Container>
@@ -23,6 +26,34 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id='internship-exvention'
+            title='HR (Human Resource Management System)'
+            thumbnail={thumbHrExvention}
+          >
+            Manage candidate information and approvals through the website.
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id='reddit-clone'
+            title='Reddit Clone'
+            thumbnail={thumbRedditCloneJoin}
+          >
+            Build a Reddit clone from scratch using React, Firebase, Next.js,
+            Chakra UI, and TypeScript
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id='weather-app'
+            title='Weather App'
+            thumbnail={thumbWeatherApp}
+          >
+            Type in a location and get the weather report!
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id='my-anime-community'
@@ -145,7 +176,7 @@ const Works = () => (
       </SimpleGrid>
     </Container>
   </Layout>
-);
+)
 
-export default Works;
-export { getServerSideProps } from '../components/chakra';
+export default Works
+export { getServerSideProps } from '../components/chakra'

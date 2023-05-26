@@ -52,7 +52,9 @@ import {
   vue,
 } from '@components/skills'
 import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png'
-import thumbAnimeSearchAlgorithm from '@public/images/works/search_algorithm.png'
+import thumbHrExvention from '@public/images/works/hr-exvention.png'
+import thumbWeatherApp from '@public/images/works/weather-app.png'
+import thumbAnimeSearchAlgorithm from '@public/images/works/search-algorithm.png'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import {
@@ -219,19 +221,14 @@ const Home = () => {
             />
           </Heading>
           <BioSection>
-            <BioYear>2023 to present</BioYear>
-            Internship at Solution Mania Co.,Ltd.
+            <BioYear>2023</BioYear>
+            Internship at Exvention Co, Ltd.
           </BioSection>
           <BioSection>
-            <BioYear>2019 to present</BioYear>
-            Studying the Computer Science&apos;s Program in Information
-            Technology and Innovation of Bangkok University
-            (สาขาวิทยาการคอมพิวเตอร์ | คณะเทคโนโลยีสารสนเทศและนวัตกรรม |
-            มหาวิทยาลัยกรุงเทพ)
-          </BioSection>
-          <BioSection>
-            <BioYear>2001</BioYear>
-            Born in Thailand (ประเทศไทย)
+            <BioYear>2019 - 2023</BioYear>
+            Graduated the Computer Science from School of Information Technology
+            and Innovation of Bangkok University (สาขาวิทยาการคอมพิวเตอร์ |
+            คณะเทคโนโลยีสารสนเทศและนวัตกรรม | มหาวิทยาลัยกรุงเทพ)
           </BioSection>
         </Section>
 
@@ -246,21 +243,8 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            <Link href='https://nineria.vercel.app' target='_blank'>
-              PixelArt
-            </Link>
-            , Music, Anime,{' '}
-            <Link href='https://nineria.vercel.app' target='_blank'>
-              Drawing
-            </Link>
-            , Playing Guitar,{' '}
-            <Link
-              href='https://www.instagram.com/ninerianananai'
-              target='_blank'
-            >
-              Photography
-            </Link>
-            , Ridding motorbike,{' '}
+            PixelArt , Music, Anime, Drawing , Playing Guitar, Photography ,
+            Ridding motorbike,
           </Paragraph>
         </Section>
 
@@ -577,11 +561,24 @@ const Home = () => {
 
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
+              title='HR (Human Resource Management System)'
+              thumbnail={thumbHrExvention}
+            >
+              Manage candidate information and approvals through the website
+            </GridItem>
+            <GridItem
               href='https://myanimecommunity.vercel.app'
               title='My Anime Community'
               thumbnail={thumbMyAniCommu}
             >
               Anime News, Q&A, Review, and more
+            </GridItem>
+            <GridItem
+              href='https://react-weather-app-three-lyart.vercel.app/'
+              title='Weather App'
+              thumbnail={thumbWeatherApp}
+            >
+              Type in a location and get the weather report!
             </GridItem>
             <GridItem
               href='https://github.com/nineria/AnimeListApi/blob/main/AnimeRecomendation.ipynb'
@@ -593,14 +590,14 @@ const Home = () => {
           </SimpleGrid>
 
           <Box align='center' my={4}>
-            <NextLink href='/posts' passHref scroll={false}>
+            <NextLink href='/works' passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme={SchemeColorTheme}
                 color='white'
                 bgColor={colorTheme}
               >
-                All posts
+                All works
               </Button>
             </NextLink>
           </Box>

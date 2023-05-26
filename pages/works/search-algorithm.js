@@ -1,7 +1,17 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { Badge, Container, Link, List, ListItem } from '@chakra-ui/react';
-import Layout from '../../components/layouts/article';
-import { Meta, Title } from '../../components/work';
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+} from '@chakra-ui/react'
+import Layout from '../../components/layouts/article'
+import thumbSearchAlgorithm from '@public/images/works/search-algorithm.png'
+import { Meta, Title } from '../../components/work'
+import P from '@components/paragraph'
+import Image from 'next/image'
 
 const Work = () => (
   <Layout title='MyAniCommu'>
@@ -9,6 +19,8 @@ const Work = () => (
       <Title createdDate='18 AUG, 2022'>
         Anime Search Algorithm <Badge>2020</Badge>
       </Title>
+
+      <Image src={thumbSearchAlgorithm} alt='search-algorithm' />
 
       <List ml={4} my={4}>
         <ListItem>
@@ -34,7 +46,7 @@ const Work = () => (
       /> */}
     </Container>
   </Layout>
-);
+)
 
-export default Work;
-export { getServerSideProps } from '../../components/chakra';
+export default Work
+export { getServerSideProps } from '../../components/chakra'
