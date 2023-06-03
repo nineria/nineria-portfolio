@@ -8,7 +8,7 @@ import thumbFavAnimeApp from '../public/images/works/favorite_anime_app.png'
 import thumbMusicPlayerApp from '../public/images/works/music_player_app.png'
 import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png'
 import thumbSearchAlgorithm from '../public/images/works/search-algorithm.png'
-import thumbHrExvention from '../public/images/works/hr-exvention.png'
+import thumbHrApp from '../public/images/works/hr-app.jpg'
 import thumbRedditCloneJoin from '@public/images/works/reddit-clone-join.png'
 import thumbWeatherApp from '@public/images/works/weather-app.png'
 import headingOldWorks from '../public/text/old-works.png'
@@ -30,7 +30,7 @@ const Works = () => (
           <WorkGridItem
             id='internship-exvention'
             title='HR (Human Resource Management System)'
-            thumbnail={thumbHrExvention}
+            thumbnail={thumbHrApp}
           >
             Manage candidate information and approvals through the website.
           </WorkGridItem>

@@ -12,7 +12,7 @@ import Image from 'next/image'
 
 import Layout from '@components/layouts/article'
 import P from '@components/paragraph'
-import { Meta, Title, WorkImage } from '@components/work'
+import { Meta, Title } from '@components/work'
 import thumbWeatherApp from '@public/images/works/weather-app.png'
 
 const Work = () => (

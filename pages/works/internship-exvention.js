@@ -9,19 +9,18 @@ import {
   Spacer,
 } from '@chakra-ui/react'
 import Image from 'next/image'
-
+import thumbHrApp from '@public/images/works/hr-app.jpg'
 import Layout from '@components/layouts/article'
 import P from '@components/paragraph'
-import { Meta, Title, WorkImage } from '@components/work'
-import thumbHrExvention from '@public/images/works/hr-exvention.png'
+import { Meta, Title } from '@components/work'
 
 const Work = () => (
-  <Layout title='Internship Exvention'>
+  <Layout title='Exvention Internship'>
     <Container>
       <Title createdDate='20 AUG, 2022'>
-        HR (Human Resource Management System) <Badge>2023</Badge>
+        Exvention Internship <Badge>2023</Badge>
       </Title>
-      <Image src={thumbHrExvention} alt='hr-exvention' />
+      <Image src={thumbHrApp} alt='exvention-internship' />
 
       <Heading mt={2} size='md'>
         Description

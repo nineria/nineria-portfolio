@@ -51,8 +51,8 @@ import {
   ts,
   vue,
 } from '@components/skills'
+import thumbHrApp from '@public/images/works/hr-app.jpg'
 import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png'
-import thumbHrExvention from '@public/images/works/hr-exvention.png'
 import thumbWeatherApp from '@public/images/works/weather-app.png'
 import thumbAnimeSearchAlgorithm from '@public/images/works/search-algorithm.png'
 import Image from 'next/image'
@@ -555,16 +555,13 @@ const Home = () => {
 
           <Spacer my={8} />
 
-          <KoFi />
-
-          <Spacer my={8} />
-
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              title='HR (Human Resource Management System)'
-              thumbnail={thumbHrExvention}
+              href='https://nineria.vercel.app/works/internship-exvention'
+              title='Exvention Internship'
+              thumbnail={thumbHrApp}
             >
-              Manage candidate information and approvals through the website
+              HR (Human Resource Management System)
             </GridItem>
             <GridItem
               href='https://myanimecommunity.vercel.app'
@@ -589,17 +586,10 @@ const Home = () => {
             </GridItem>
           </SimpleGrid>
 
+          <Spacer my={8} />
+
           <Box align='center' my={4}>
-            <NextLink href='/works' passHref scroll={false}>
-              <Button
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={SchemeColorTheme}
-                color='white'
-                bgColor={colorTheme}
-              >
-                All works
-              </Button>
-            </NextLink>
+            <KoFi />
           </Box>
         </Section>
       </Container>
