@@ -54,7 +54,7 @@ import {
 import thumbHrApp from '@public/images/works/hr-app.jpg'
 import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png'
 import thumbWeatherApp from '@public/images/works/weather-app.png'
-import thumbAnimeSearchAlgorithm from '@public/images/works/search-algorithm.png'
+import thumbAnimeSearchAlgorithm from '@public/images/works/search-algorithm-09.png'
 import Image from 'next/image'
 import NextLink from 'next/link'
 import {
