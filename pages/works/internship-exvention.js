@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Badge,
   Container,
@@ -7,22 +7,22 @@ import {
   List,
   ListItem,
   Spacer,
-} from '@chakra-ui/react'
-import Image from 'next/image'
-import thumbHrApp from '@public/images/works/hr-app.jpg'
-import Layout from '@components/layouts/article'
-import P from '@components/paragraph'
-import { Meta, Title } from '@components/work'
+} from "@chakra-ui/react";
+import Image from "next/image";
+import thumbHrApp from "@public/images/works/hr-app.jpg";
+import Layout from "@components/layouts/article";
+import P from "@components/paragraph";
+import { Meta, Title } from "@components/work";
 
 const Work = () => (
-  <Layout title='Exvention Internship'>
+  <Layout title="Exvention Internship">
     <Container>
-      <Title createdDate='20 AUG, 2022'>
+      <Title createdDate="20 AUG, 2022">
         Exvention Internship <Badge>2023</Badge>
       </Title>
-      <Image src={thumbHrApp} alt='exvention-internship' />
+      <Image src={thumbHrApp} alt="exvention-internship" />
 
-      <Heading mt={2} size='md'>
+      <Heading mt={2} size="md">
         Description
       </Heading>
       <P>
@@ -34,8 +34,8 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href='https://github.com/exvention/' target='_blank'>
-            https://github.com/exvention/ <ExternalLinkIcon mx='2px' />
+          <Link href="https://github.com/exvention/" target="_blank">
+            https://github.com/exvention/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -63,7 +63,7 @@ const Work = () => (
       </AspectRatio> */}
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";

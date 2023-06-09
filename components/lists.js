@@ -1,5 +1,5 @@
-import { Box, Link, Tooltip, useColorModeValue } from '@chakra-ui/react';
-import styled from '@emotion/styled';
+import { Box, Link, Tooltip, useColorModeValue } from "@chakra-ui/react";
+import styled from "@emotion/styled";
 
 const HeadingStyle = styled.p`
   text-align: justify;
@@ -9,12 +9,12 @@ const HeadingStyle = styled.p`
 const MemberIconStyle = styled.div`
   position: relative;
   background-color: ${(props) =>
-    props.color || useColorModeValue('#fff', '#333')};
+    props.color || useColorModeValue("#fff", "#333")};
   width: 50px;
   height: 50px;
-  padding: ${(props) => props.padding || '5px'};
+  padding: ${(props) => props.padding || "5px"};
   border-radius: 100%;
-  border: 1px solid ${() => useColorModeValue('#000', '#fff')};
+  border: 1px solid ${() => useColorModeValue("#000", "#fff")};
   cursor: pointer;
   transition: 0.35s ease-out;
   &:hover {
@@ -31,13 +31,13 @@ const Flex = styled.div`
 `;
 
 export const MemberIcon = ({
-  href = 'https://nineria.vercel.app/',
+  href = "https://nineria.vercel.app/",
   color,
   padding,
   label,
   children,
 }) => (
-  <Tooltip hasArrow label={label} placement='top' mt='3'>
+  <Tooltip hasArrow label={label} placement="top" mt="3">
     <Link href={href} isExternal>
       <MemberIconStyle color={color} padding={padding} label={label}>
         {children}

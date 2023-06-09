@@ -1,19 +1,19 @@
-import { AspectRatio, Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react';
-import { Global } from '@emotion/react';
-import Image from 'next/image';
-import NextLink from 'next/link';
+import { Box, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
+import { Global } from "@emotion/react";
+import Image from "next/image";
+import NextLink from "next/link";
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w='100%' textAlign='center'>
-    <LinkBox cursor='pointer'>
+  <Box w="100%" textAlign="center">
+    <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
         alt={title}
-        className='grid-item-thumbnail'
-        placeholder='blur'
-        loading='lazy'
+        className="grid-item-thumbnail"
+        placeholder="blur"
+        loading="lazy"
       />
-      <LinkOverlay href={href} target='_blank'>
+      <LinkOverlay href={href} target="_blank">
         <Text mt={2} fontWeight={600}>
           {title}
         </Text>
@@ -24,14 +24,14 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 );
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w='100%' textAlign='center'>
+  <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} passHref scroll={false}>
-      <LinkBox cursor='pointer'>
+      <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
-          className='grid-item-thumbnail'
-          placeholder='blur'
+          className="grid-item-thumbnail"
+          placeholder="blur"
         />
         <LinkOverlay href={`/works/${id}`}>
           <Text mt={2} fontSize={20}>

@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Badge,
   Container,
@@ -6,23 +6,23 @@ import {
   Link,
   List,
   ListItem,
-} from '@chakra-ui/react';
-import Image from 'next/image';
+} from "@chakra-ui/react";
+import Image from "next/image";
 
-import Layout from '@components/layouts/article';
-import P from '@components/paragraph';
-import { Meta, Title, WorkImage } from '@components/work';
-import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
+import Layout from "@components/layouts/article";
+import P from "@components/paragraph";
+import { Meta, Title, WorkImage } from "@components/work";
+import thumbMyAniCommu from "@public/images/works/myanicommu_thumb.png";
 
 const Work = () => (
-  <Layout title='My Anime Community'>
+  <Layout title="My Anime Community">
     <Container>
-      <Title createdDate='20 AUG, 2022'>
+      <Title createdDate="20 AUG, 2022">
         My Anime Community <Badge>{new Date().getFullYear()}</Badge>
       </Title>
-      <Image src={thumbMyAniCommu} alt='my-anime-community' />
+      <Image src={thumbMyAniCommu} alt="my-anime-community" />
 
-      <Heading mt={2} size='md'>
+      <Heading mt={2} size="md">
         Description
       </Heading>
       <P>
@@ -35,10 +35,10 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link
-            href='https://myanimecommunity.vercel.app/posts'
-            target='_blank'
+            href="https://myanimecommunity.vercel.app/posts"
+            target="_blank"
           >
-            https://myanimecommunity.vercel.app/ <ExternalLinkIcon mx='2px' />
+            https://myanimecommunity.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -52,36 +52,36 @@ const Work = () => (
       </List>
 
       <WorkImage
-        src='/images/works/myanicommu-00.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-00.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-01.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-01.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-02.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-02.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-03.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-03.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-04.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-04.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-05.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-05.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-06.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-06.png"
+        alt="my-anime-community"
       />
       <WorkImage
-        src='/images/works/myanicommu-07.png'
-        alt='my-anime-community'
+        src="/images/works/myanicommu-07.png"
+        alt="my-anime-community"
       />
 
       {/* <WorkImage src='/images/works/inkdrop_01.png' alt='Inkdrop' />
@@ -100,4 +100,4 @@ const Work = () => (
 );
 
 export default Work;
-export { getServerSideProps } from '../../components/chakra';
+export { getServerSideProps } from "../../components/chakra";

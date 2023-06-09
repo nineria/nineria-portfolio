@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Badge,
   Container,
@@ -7,23 +7,23 @@ import {
   List,
   ListItem,
   Spacer,
-} from '@chakra-ui/react'
-import Image from 'next/image'
+} from "@chakra-ui/react";
+import Image from "next/image";
 
-import Layout from '@components/layouts/article'
-import P from '@components/paragraph'
-import { Meta, Title } from '@components/work'
-import thumbWeatherApp from '@public/images/works/weather-app.png'
+import Layout from "@components/layouts/article";
+import P from "@components/paragraph";
+import { Meta, Title } from "@components/work";
+import thumbWeatherApp from "@public/images/works/weather-app.png";
 
 const Work = () => (
-  <Layout title='Weather App'>
+  <Layout title="Weather App">
     <Container>
-      <Title createdDate='20 AUG, 2022'>
+      <Title createdDate="20 AUG, 2022">
         Weather App <Badge>2021</Badge>
       </Title>
-      <Image src={thumbWeatherApp} alt='hr-exvention' />
+      <Image src={thumbWeatherApp} alt="hr-exvention" />
 
-      <Heading mt={2} size='md'>
+      <Heading mt={2} size="md">
         Description
       </Heading>
       <P>Type in a location and get the weather report!</P>
@@ -33,11 +33,11 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link
-            href='https://react-weather-app-three-lyart.vercel.app/'
-            target='_blank'
+            href="https://react-weather-app-three-lyart.vercel.app/"
+            target="_blank"
           >
-            https://react-weather-app-three-lyart.vercel.app/{' '}
-            <ExternalLinkIcon mx='2px' />
+            https://react-weather-app-three-lyart.vercel.app/{" "}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -53,7 +53,7 @@ const Work = () => (
       <Spacer my={100} />
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";

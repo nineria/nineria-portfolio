@@ -1,4 +1,4 @@
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
   Badge,
   Container,
@@ -7,23 +7,23 @@ import {
   List,
   ListItem,
   Spacer,
-} from '@chakra-ui/react'
-import Image from 'next/image'
+} from "@chakra-ui/react";
+import Image from "next/image";
 
-import Layout from '@components/layouts/article'
-import P from '@components/paragraph'
-import { Meta, Title, WorkImage } from '@components/work'
-import thumbRedditCloneJoin from '@public/images/works/reddit-clone-join.png'
+import Layout from "@components/layouts/article";
+import P from "@components/paragraph";
+import { Meta, Title, WorkImage } from "@components/work";
+import thumbRedditCloneJoin from "@public/images/works/reddit-clone-join.png";
 
 const Work = () => (
-  <Layout title='Reddit Clone'>
+  <Layout title="Reddit Clone">
     <Container>
-      <Title createdDate='20 AUG, 2022'>
+      <Title createdDate="20 AUG, 2022">
         Reddit clone with Next.js <Badge>2022</Badge>
       </Title>
-      <Image src={thumbRedditCloneJoin} alt='hr-exvention' />
+      <Image src={thumbRedditCloneJoin} alt="hr-exvention" />
 
-      <Heading mt={2} size='md'>
+      <Heading mt={2} size="md">
         Description
       </Heading>
       <P>
@@ -35,11 +35,11 @@ const Work = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link
-            href='https://github.com/nineria/next-reddit-clone'
-            target='_blank'
+            href="https://github.com/nineria/next-reddit-clone"
+            target="_blank"
           >
-            https://github.com/nineria/next-reddit-clone{' '}
-            <ExternalLinkIcon mx='2px' />
+            https://github.com/nineria/next-reddit-clone{" "}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -52,14 +52,14 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src='/images/works/reddit-clone-read.png' alt='Inkdrop' />
-      <WorkImage src='/images/works/reddit-clone-create.png' alt='Inkdrop' />
-      <WorkImage src='/images/works/reddit-clone-comment.png' alt='Inkdrop' />
+      <WorkImage src="/images/works/reddit-clone-read.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/reddit-clone-create.png" alt="Inkdrop" />
+      <WorkImage src="/images/works/reddit-clone-comment.png" alt="Inkdrop" />
 
       <Spacer my={100} />
     </Container>
   </Layout>
-)
+);
 
-export default Work
-export { getServerSideProps } from '../../components/chakra'
+export default Work;
+export { getServerSideProps } from "../../components/chakra";

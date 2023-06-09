@@ -6,32 +6,32 @@ import {
   Heading,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react';
-import Image from 'next/image';
-import NextLink from 'next/link';
-import Layout from '../components/layouts/article';
-import headingPopularPosts from '../public/text/popular-posts.png';
+} from "@chakra-ui/react";
+import Image from "next/image";
+import NextLink from "next/link";
+import Layout from "../components/layouts/article";
+import headingPopularPosts from "../public/text/popular-posts.png";
 
 const Posts = () => (
-  <Layout title='Tewarit Jantarasorn - Posts'>
+  <Layout title="Tewarit Jantarasorn - Posts">
     <Container>
-      <Heading as='h3' fontSize={20} mb={4}>
+      <Heading as="h3" fontSize={20} mb={4}>
         <Image
           src={headingPopularPosts}
-          alt='works'
-          loading='lazy'
-          placeholder='blur'
+          alt="works"
+          loading="lazy"
+          placeholder="blur"
         />
       </Heading>
 
       <Text>Nothing right now ;)</Text>
       <Divider my={6} />
-      <Box my={6} align='center'>
-        <NextLink href='/' passHref>
+      <Box my={6} align="center">
+        <NextLink href="/" passHref>
           <Button
-            colorScheme={useColorModeValue('purple', 'red')}
-            color='white'
-            bgColor={useColorModeValue('purple.400', 'red.400')}
+            colorScheme={useColorModeValue("purple", "red")}
+            color="white"
+            bgColor={useColorModeValue("purple.400", "red.400")}
           >
             Return to home
           </Button>
@@ -97,4 +97,4 @@ const Posts = () => (
 );
 
 export default Posts;
-export { getServerSideProps } from '../components/chakra';
+export { getServerSideProps } from "../components/chakra";
