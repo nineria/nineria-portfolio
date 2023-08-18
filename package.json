@@ -1,7 +1,7 @@
 {
   "name": "nineria-portfolio",
   "version": "1.0.0",
-  "description": "Tewarit's website",
+  "description": "Nineria's website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
