@@ -1,7 +1,7 @@
-import { Text, useColorModeValue } from "@chakra-ui/react";
-import styled from "@emotion/styled";
-import Image from "next/image";
-import Link from "next/link";
+import { Text, useColorModeValue } from '@chakra-ui/react';
+import styled from '@emotion/styled';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -22,17 +22,19 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const footPrintImg = `/images/cat${useColorModeValue("", "-dark")}.png`;
+  // const footPrintImg = `/images/cat${useColorModeValue('', '-dark')}.png`;
 
   return (
-    <Link href="/" scroll={false}>
+    <Link href='/' scroll={false}>
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
           <Text
-            color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
+            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            fontFamily='"Barlow Condensed", sans-serif'
+            fontWeight='semibold'
+            fontSize={24}
+            letterSpacing={2}
           >
             Nineria
           </Text>
