@@ -78,8 +78,8 @@ const ProfileImage = chakra(Image, {
 const Home = () => {
   const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`;
 
-  const SchemeColorTheme = useColorModeValue('red', 'teal');
-  const colorTheme = useColorModeValue('red.400', 'teal.400');
+  const SchemeColorTheme = useColorModeValue('red', 'red');
+  const colorTheme = useColorModeValue('red.400', 'red.400');
 
   return (
     <Layout>
@@ -114,10 +114,10 @@ const Home = () => {
 
           <Box
             pos='absolute'
-            right='60px'
-            bottom='-7.8px'
-            w='15px'
-            h='15px'
+            right='30px'
+            bottom='-5.8px'
+            w='10px'
+            h='10px'
             bg='white'
             borderBottom='1px solid #555'
             borderRight='1px solid #555'
@@ -148,7 +148,7 @@ const Home = () => {
             textAlign='center'
           >
             <Box
-              borderColor={useColorModeValue('red.200', 'white')}
+              borderColor={useColorModeValue('red.200', 'red.100')}
               borderWidth={2}
               p='2px'
               borderStyle='solid'
@@ -171,7 +171,7 @@ const Home = () => {
                 borderRadius='full'
                 width='100%'
                 height='100%'
-                bgColor={useColorModeValue('red.300', 'teal.300')}
+                bgColor={useColorModeValue('red.300', 'red.300')}
                 pointerEvents='none'
               />
             </Box>
@@ -189,17 +189,22 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            I&apos;m a Full-Stack web developer with a passion for building web
-            services etc. I&apos;m excited to learn new programming features and
-            frameworks, from planning, designing, and developing to launching
-            products and solving real-life problems with code. When not online,
-            I like to hang out with my camera and travel to several places, I
-            also love to ride motorcycles and draw. Currently, I&apos;m
-            developing a website called{' '}
+            I&#39;m a Full-Stack web developer who enjoys crafting web services.
+            I&#39;m excited to learn new programming features and frameworks
+            from brainstorming ideas to launching complete products and solving
+            real-world issues with clever coding. When I&#39;m offline, I relish
+            capturing moments through my camera while traveling and experiencing
+            the motorcycle rides. Drawing is also a hobby of mine. Currently,
+            I&#39;m developing websites called &#34;
             <NextLink href='https://myanimecommunity.vercel.app' passHref>
-              <Link target='_blank'>My Anime Community</Link>
+              <Link target='_blank'>MyAnimeCommunity</Link>
             </NextLink>
-            .
+            &#34; and &#34;
+            <NextLink href='https://otakucodex.vercel.app' passHref>
+              <Link target='_blank'>OTAKUCODEX</Link>
+            </NextLink>
+            &#34;, which aims to unite people through a shared passion for
+            anime. .
           </Paragraph>
           <Box align='center' my={4}>
             <NextLink href='/works' passHref scroll={false}>
@@ -248,7 +253,7 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            PixelArt , Music, Anime, Drawing , Playing Guitar, Photography ,
+            PixelArt , Music, Anime, Drawing, Playing Guitar, Photography ,
             Ridding motorbike,
           </Paragraph>
         </Section>

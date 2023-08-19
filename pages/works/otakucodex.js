@@ -25,7 +25,7 @@ const Work = () => (
         Description
       </Heading>
       <P>
-        &#34;OTAKUCODEX&#34; is an online platform dedicated to providing anime
+        OTAKUCODEX is an online platform dedicated to providing anime
         enthusiasts with detailed descriptions and ranking scores for various
         anime series. On this website, users can find comprehensive information
         about different anime shows, including synopses, character details,

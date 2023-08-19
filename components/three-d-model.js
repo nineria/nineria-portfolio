@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import { useCallback, useEffect, useRef, useState } from "react";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { loadGLTFModel } from "../lib/model";
-import { ModelContainer, ModelSpinner } from "./three-d-model-loader";
+import { motion } from 'framer-motion';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { loadGLTFModel } from '../lib/model';
+import { ModelContainer, ModelSpinner } from './three-d-model-loader';
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -70,7 +70,7 @@ const ThreeDModel = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, "/box.glb", {
+      loadGLTFModel(scene, '/box.glb', {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
@@ -111,9 +111,9 @@ const ThreeDModel = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("resize", handleWindowResize, false);
+    window.addEventListener('resize', handleWindowResize, false);
     return () => {
-      window.removeEventListener("resize", handleWindowResize, false);
+      window.removeEventListener('resize', handleWindowResize, false);
     };
   }, [handleWindowResize]);
 

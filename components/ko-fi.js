@@ -1,8 +1,8 @@
 import { Box, Button, Image, Text, useColorModeValue } from '@chakra-ui/react';
 
 const KoFi = () => {
-  const SchemeColorTheme = useColorModeValue('red', 'teal');
-  const colorTheme = useColorModeValue('red.400', 'teal.400');
+  const SchemeColorTheme = useColorModeValue('red', 'red');
+  const colorTheme = useColorModeValue('red.400', 'red.400');
   return (
     <Box align='center' textColor='#fff'>
       <Button
