@@ -1,7 +1,7 @@
 {
   "name": "nineria-portfolio",
   "version": "1.0.0",
-  "description": "Nineria's website",
+  "description": "Shin's website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
