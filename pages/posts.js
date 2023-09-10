@@ -1,45 +1,34 @@
-import {
-  AbsoluteCenter,
-  Box,
-  Button,
-  Center,
-  Container,
-  Divider,
-  Heading,
-  SimpleGrid,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import Image from 'next/image';
-import Layout from '../components/layouts/article';
-import headingPopularPosts from '../public/text/popular-posts.png';
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import Image from "next/image";
+import Layout from "../components/layouts/article";
+import headingPopularPosts from "../public/text/popular-posts.png";
 
 // image thumbnails
-import thumbWasurejiNoKotonoha from '../public/images/posts/Grimms-Notes-Wasureji-No-Kotonoha-Gura-AI-Cover.png';
-import thumbAvid from '../public/images/posts/Avid-86-EIGHTY-SIX-Gura-AI-Cover.png';
-import thumbIdol from '../public/images/posts/idol.png';
-import thumbLayers from '../public/images/posts/Layers.png';
+import thumbAvid from "../public/images/posts/Avid-86-EIGHTY-SIX-Gura-AI-Cover.png";
+import thumbWasurejiNoKotonoha from "../public/images/posts/Grimms-Notes-Wasureji-No-Kotonoha-Gura-AI-Cover.png";
+import thumbLayers from "../public/images/posts/Layers.png";
+import thumbIdol from "../public/images/posts/idol.png";
 
-import thumbBirthdaySong from '../public/images/posts/birthday-song.png';
-import thumbMyDearest from '../public/images/posts/my-dearest.png';
-import thumbLisaRealize from '../public/images/posts/lisa-realize.png';
-import thumbCryingForRain from '../public/images/posts/crying-for-rain.png';
+import thumbBirthdaySong from "../public/images/posts/birthday-song.png";
+import thumbCryingForRain from "../public/images/posts/crying-for-rain.png";
+import thumbLisaRealize from "../public/images/posts/lisa-realize.png";
+import thumbMyDearest from "../public/images/posts/my-dearest.png";
 
-import thumbStayWithMe from '../public/images/posts/stay-with-me-rem-ai-cover.png';
-import thumbYellow from '../public/images/posts/yellow.png';
-import thumbJustAJoke from '../public/images/posts/just-a-joke.png';
-import thumbSaySo from '../public/images/posts/say-so.png';
+import thumbJustAJoke from "../public/images/posts/just-a-joke.png";
+import thumbSaySo from "../public/images/posts/say-so.png";
+import thumbStayWithMe from "../public/images/posts/stay-with-me-rem-ai-cover.png";
+import thumbYellow from "../public/images/posts/yellow.png";
 
-import thumbJustTheTwoOfUs from '../public/images/posts/just-the-two-of-us-rem-ai-cover-aggressive-version.png';
-import thumbEdSheeranPerfect from '../public/images/posts/ed-sheeran-perfect-viper-ai-cover.png';
-import thumbYakuzaOstBakaMitai from '../public/images/posts/yakuza-ost-baka-mitai-rem-ai-cover.png';
+import thumbEdSheeranPerfect from "../public/images/posts/ed-sheeran-perfect-viper-ai-cover.png";
+import thumbJustTheTwoOfUs from "../public/images/posts/just-the-two-of-us-rem-ai-cover-aggressive-version.png";
+import thumbYakuzaOstBakaMitai from "../public/images/posts/yakuza-ost-baka-mitai-rem-ai-cover.png";
 
-import Section from '@components/section';
-import { GridItem } from '@components/grid-item';
-import TextDivider from '@components/text-divider';
+import { GridItem } from "@components/grid-item";
+import Section from "@components/section";
+import TextDivider from "@components/text-divider";
 
 const Posts = () => (
-  <Layout title='Tewarit Jantarasorn - Posts'>
+  <Layout title='Shin&#39;s Posts'>
     <Container>
       <Heading as='h3' fontSize={20} mb={4}>
         <Image
@@ -164,4 +153,4 @@ const Posts = () => (
 );
 
 export default Posts;
-export { getServerSideProps } from '../components/chakra';
+export { getServerSideProps } from "../components/chakra";

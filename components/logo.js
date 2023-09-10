@@ -1,7 +1,6 @@
-import { Text, useColorModeValue } from '@chakra-ui/react';
-import styled from '@emotion/styled';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Text, useColorModeValue } from "@chakra-ui/react";
+import styled from "@emotion/styled";
+import Link from "next/link";
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -30,13 +29,13 @@ const Logo = () => {
         <LogoBox>
           {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
           <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='"Barlow Condensed", sans-serif'
+            color={useColorModeValue("gray.800", "whiteAlpha.900")}
+            fontFamily='"Noto Sans Japanese", sans-serif'
             fontWeight='semibold'
             fontSize={24}
             letterSpacing={2}
           >
-            Nineria
+            シン - Shin
           </Text>
         </LogoBox>
       </a>

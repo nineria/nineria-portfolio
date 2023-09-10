@@ -1,22 +1,22 @@
-import { Container, Divider, Heading, SimpleGrid } from '@chakra-ui/react';
-import Image from 'next/image';
-import { WorkGridItem } from '../components/grid-item';
-import Layout from '../components/layouts/article';
-import Section from '../components/section';
-import thumbCafeApp from '../public/images/works/cafe_app.png';
-import thumbFavAnimeApp from '../public/images/works/favorite_anime_app.png';
-import thumbMusicPlayerApp from '../public/images/works/music_player_app.png';
-import thumbMyAniCommu from '../public/images/works/myanicommu_thumb.png';
-import thumbSearchAlgorithm from '../public/images/works/search-algorithm-09.png';
-import thumbHrApp from '../public/images/works/hr-app.jpg';
-import thumbRedditCloneJoin from '@public/images/works/reddit-clone-join.png';
-import thumbWeatherApp from '@public/images/works/weather-app.png';
-import headingOldWorks from '../public/text/old-works.png';
-import headingWorks from '../public/text/works.png';
-import OTAKUCODEXThumb from '@public/images/works/OTAKU-CODEX-home-page-thumb.png';
+import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
+import OTAKUCODEXThumb from "@public/images/works/OTAKU-CODEX-home-page-thumb.png";
+import thumbRedditCloneJoin from "@public/images/works/reddit-clone-join.png";
+import thumbWeatherApp from "@public/images/works/weather-app.png";
+import Image from "next/image";
+import { WorkGridItem } from "../components/grid-item";
+import Layout from "../components/layouts/article";
+import Section from "../components/section";
+import thumbCafeApp from "../public/images/works/cafe_app.png";
+import thumbFavAnimeApp from "../public/images/works/favorite_anime_app.png";
+import thumbHrApp from "../public/images/works/hr-app.jpg";
+import thumbMusicPlayerApp from "../public/images/works/music_player_app.png";
+import thumbMyAniCommu from "../public/images/works/myanicommu_thumb.png";
+import thumbSearchAlgorithm from "../public/images/works/search-algorithm-09.png";
+import headingOldWorks from "../public/text/old-works.png";
+import headingWorks from "../public/text/works.png";
 
 const Works = () => (
-  <Layout title='Tewarit Jantarasorn - Works'>
+  <Layout title='Shin&#39;s Works'>
     <Container>
       <Heading as='h3' fontSize={20} mb={4}>
         <Image
@@ -192,4 +192,4 @@ const Works = () => (
 );
 
 export default Works;
-export { getServerSideProps } from '../components/chakra';
+export { getServerSideProps } from "../components/chakra";

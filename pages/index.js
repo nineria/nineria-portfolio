@@ -1,8 +1,7 @@
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
-  chakra,
   Container,
   Flex,
   Heading,
@@ -12,10 +11,11 @@ import {
   SimpleGrid,
   Spacer,
   Text,
+  chakra,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { BioSection, BioYear } from '@components/bio';
-import { GridItem } from '@components/grid-item';
+} from "@chakra-ui/react";
+import { BioSection, BioYear } from "@components/bio";
+import { GridItem } from "@components/grid-item";
 import {
   headingBio,
   headingHobby,
@@ -23,19 +23,19 @@ import {
   headingSocial,
   headingTewarit,
   headingWork,
-} from '@components/headers';
-import KoFi from '@components/ko-fi';
-import Layout from '@components/layouts/article';
-import { Group, MemberIcon } from '@components/lists';
-import Paragraph from '@components/paragraph';
-import Section from '@components/section';
+} from "@components/headers";
+import KoFi from "@components/ko-fi";
+import Layout from "@components/layouts/article";
+import { Group, MemberIcon } from "@components/lists";
+import Paragraph from "@components/paragraph";
+import Section from "@components/section";
 import {
   angular,
   aseprite,
   canva,
   css3,
-  figma,
   docker,
+  figma,
   firebase,
   framer,
   graphql,
@@ -49,37 +49,37 @@ import {
   react,
   redis,
   redux,
+  svelte,
   ts,
   vue,
-  svelte,
-} from '@components/skills';
-import thumbOtakuCodex from '@public/images/works/OTAKU-CODEX-home-page-thumb.png';
-import thumbMyAniCommu from '@public/images/works/myanicommu_thumb.png';
+} from "@components/skills";
+import thumbOtakuCodex from "@public/images/works/OTAKU-CODEX-home-page-thumb.png";
+import thumbMyAniCommu from "@public/images/works/myanicommu_thumb.png";
 
-import thumbJustTheTwoOfUs from '@public/images/posts/just-the-two-of-us-rem-ai-cover-aggressive-version.png';
-import thumbEdSheeranPerfect from '@public/images/posts/ed-sheeran-perfect-viper-ai-cover.png';
-import thumbYakuzaOstBakaMitai from '@public/images/posts/yakuza-ost-baka-mitai-rem-ai-cover.png';
+import thumbEdSheeranPerfect from "@public/images/posts/ed-sheeran-perfect-viper-ai-cover.png";
+import thumbJustTheTwoOfUs from "@public/images/posts/just-the-two-of-us-rem-ai-cover-aggressive-version.png";
+import thumbYakuzaOstBakaMitai from "@public/images/posts/yakuza-ost-baka-mitai-rem-ai-cover.png";
 
-import Image from 'next/image';
-import NextLink from 'next/link';
+import Image from "next/image";
+import NextLink from "next/link";
 import {
   IoLogoGithub,
   IoLogoTiktok,
   IoLogoTwitter,
   IoLogoYoutube,
-} from 'react-icons/io5';
-import { RiVipCrownFill } from 'react-icons/ri';
-import Typewriter from 'typewriter-effect';
+} from "react-icons/io5";
+import { RiVipCrownFill } from "react-icons/ri";
+import Typewriter from "typewriter-effect";
 
 const ProfileImage = chakra(Image, {
-  shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
+  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
 });
 
 const Home = () => {
-  const borderLeftColor = `section-title${useColorModeValue('', '-dark')}`;
+  const borderLeftColor = `section-title${useColorModeValue("", "-dark")}`;
 
-  const SchemeColorTheme = useColorModeValue('red', 'red');
-  const colorTheme = useColorModeValue('red.400', 'red.400');
+  const SchemeColorTheme = useColorModeValue("red", "red");
+  const colorTheme = useColorModeValue("red.400", "red.400");
 
   return (
     <Layout>
@@ -91,7 +91,7 @@ const Home = () => {
           textAlign='center'
           bg='white'
           color='black'
-          css={{ backdropFilter: 'blur(10px)' }}
+          backdropFilter='blur(10px)'
           border='1px solid #555'
         >
           <Typewriter
@@ -101,7 +101,7 @@ const Home = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('Hello, ~')
+                .typeString("Hello, ~")
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
@@ -121,20 +121,20 @@ const Home = () => {
             bg='white'
             borderBottom='1px solid #555'
             borderRight='1px solid #555'
-            style={{ transform: 'rotate(45deg)' }}
+            style={{ transform: "rotate(45deg)" }}
           />
         </Box>
 
-        <Box display={{ md: 'flex' }}>
-          <Box flexGrow={1} textAlign={{ base: 'center', md: 'left' }}>
+        <Box display={{ md: "flex" }}>
+          <Box flexGrow={1} textAlign={{ base: "center", md: "left" }}>
             <Image
               src={headingTewarit}
               alt='Tewarit Jantarasorn'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
-            <Flex flexDir={{ base: 'column', md: 'row' }}>
+            <Flex flexDir={{ base: "column", md: "row" }}>
               <Text w='full'>Web Developer</Text>
               <Text w='full' whiteSpace='nowrap'>
                 (Artist / Photographer / Designer )
@@ -148,7 +148,7 @@ const Home = () => {
             textAlign='center'
           >
             <Box
-              borderColor={useColorModeValue('red.200', 'red.100')}
+              borderColor={useColorModeValue("red.200", "red.100")}
               borderWidth={2}
               p='2px'
               borderStyle='solid'
@@ -162,7 +162,7 @@ const Home = () => {
                 <RiVipCrownFill
                   color='#F6E05E'
                   size='40'
-                  style={{ transform: 'rotate(10deg)' }}
+                  style={{ transform: "rotate(10deg)" }}
                 />
               </Box>
               <ProfileImage
@@ -171,7 +171,7 @@ const Home = () => {
                 borderRadius='full'
                 width='100%'
                 height='100%'
-                bgColor={useColorModeValue('red.300', 'red.300')}
+                bgColor={useColorModeValue("red.300", "red.300")}
                 pointerEvents='none'
               />
             </Box>
@@ -185,7 +185,7 @@ const Home = () => {
               alt='work'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
           </Heading>
           <Paragraph>
@@ -227,7 +227,7 @@ const Home = () => {
               alt='bio'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
           </Heading>
           <BioSection>
@@ -249,7 +249,7 @@ const Home = () => {
               alt='hobby'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
           </Heading>
           <Paragraph>
@@ -265,7 +265,7 @@ const Home = () => {
               alt='skill'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
           </Heading>
           <Group title='Scripts & Frameworks'>
@@ -516,7 +516,7 @@ const Home = () => {
               alt='social'
               loading='lazy'
               placeholder='blur'
-              style={{ pointerEvents: 'none' }}
+              style={{ pointerEvents: "none" }}
             />
           </Heading>
           <List>
@@ -651,4 +651,4 @@ const Home = () => {
 };
 
 export default Home;
-export { getServerSideProps } from '../components/chakra';
+export { getServerSideProps } from "../components/chakra";
