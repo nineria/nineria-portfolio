@@ -35,7 +35,7 @@ const Logo = () => {
             fontSize={24}
             letterSpacing={2}
           >
-            シン - Shin
+            Shin シン
           </Text>
         </LogoBox>
       </a>

@@ -62,12 +62,7 @@ import thumbYakuzaOstBakaMitai from "@public/images/posts/yakuza-ost-baka-mitai-
 
 import Image from "next/image";
 import NextLink from "next/link";
-import {
-  IoLogoGithub,
-  IoLogoTiktok,
-  IoLogoTwitter,
-  IoLogoYoutube,
-} from "react-icons/io5";
+import { IoLogoGithub, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
 import { RiVipCrownFill } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
 
@@ -100,11 +95,7 @@ const Home = () => {
               loop: true,
             }}
             onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello, ~")
-                .pauseFor(1000)
-                .deleteAll()
-                .start();
+              typewriter.typeString("Hello, ~").pauseFor(1000).deleteAll().start();
               typewriter
                 .typeString("I'm a Full-Stack web developer based in Thailand!")
                 .pauseFor(5000)
@@ -141,12 +132,7 @@ const Home = () => {
               </Text>
             </Flex>
           </Box>
-          <Box
-            flexShrink={0}
-            my={{ base: 10, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign='center'
-          >
+          <Box flexShrink={0} my={{ base: 10, md: 0 }} ml={{ md: 6 }} textAlign='center'>
             <Box
               borderColor={useColorModeValue("red.200", "red.100")}
               borderWidth={2}
@@ -159,11 +145,7 @@ const Home = () => {
               pos='relative'
             >
               <Box pos='absolute' top='-23px' right='20px' zIndex={999}>
-                <RiVipCrownFill
-                  color='#F6E05E'
-                  size='40'
-                  style={{ transform: "rotate(10deg)" }}
-                />
+                <RiVipCrownFill color='#F6E05E' size='40' style={{ transform: "rotate(10deg)" }} />
               </Box>
               <ProfileImage
                 src='/images/tewarit.png'
@@ -189,13 +171,12 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            I&#39;m a Full-Stack web developer who enjoys crafting web services.
-            I&#39;m excited to learn new programming features and frameworks
-            from brainstorming ideas to launching complete products and solving
-            real-world issues with clever coding. When I&#39;m offline, I relish
-            capturing moments through my camera while traveling and experiencing
-            the motorcycle rides. Drawing is also a hobby of mine. Currently,
-            I&#39;m developing websites called &#34;
+            I&#39;m a Full-Stack web developer who enjoys crafting web services. I&#39;m excited to
+            learn new programming features and frameworks from brainstorming ideas to launching
+            complete products and solving real-world issues with clever coding. When I&#39;m
+            offline, I relish capturing moments through my camera while traveling and experiencing
+            the motorcycle rides. Drawing is also a hobby of mine. Currently, I&#39;m developing
+            websites called &#34;
             <NextLink href='https://myanimecommunity.vercel.app' passHref>
               <Link target='_blank'>MyAnimeCommunity</Link>
             </NextLink>
@@ -203,8 +184,7 @@ const Home = () => {
             <NextLink href='https://otakucodex.vercel.app' passHref>
               <Link target='_blank'>OTAKUCODEX</Link>
             </NextLink>
-            &#34;, which aims to unite people through a shared passion for
-            anime. .
+            &#34;, which aims to unite people through a shared passion for anime. .
           </Paragraph>
           <Box align='center' my={4}>
             <NextLink href='/works' passHref scroll={false}>
@@ -232,13 +212,17 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>2023</BioYear>
+            Working at Uniclass Co, Ltd.
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
             Internship at Exvention Co, Ltd.
           </BioSection>
           <BioSection>
             <BioYear>2019 - 2023</BioYear>
-            Graduated the Computer Science from School of Information Technology
-            and Innovation of Bangkok University (สาขาวิทยาการคอมพิวเตอร์ |
-            คณะเทคโนโลยีสารสนเทศและนวัตกรรม | มหาวิทยาลัยกรุงเทพ)
+            Graduated the Computer Science from School of Information Technology and Innovation of
+            Bangkok University (สาขาวิทยาการคอมพิวเตอร์ | คณะเทคโนโลยีสารสนเทศและนวัตกรรม |
+            มหาวิทยาลัยกรุงเทพ)
           </BioSection>
         </Section>
 
@@ -253,8 +237,7 @@ const Home = () => {
             />
           </Heading>
           <Paragraph>
-            PixelArt , Music, Anime, Drawing, Playing Guitar, Photography ,
-            Ridding motorbike,
+            PixelArt , Music, Anime, Drawing, Playing Guitar, Photography , Ridding motorbike,
           </Paragraph>
         </Section>
 
@@ -273,147 +256,56 @@ const Home = () => {
               label='HyperText Markup Language (HTML) 5'
               href='https://www.w3schools.com/html/default.asp'
             >
-              <Image
-                src={html5}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={html5} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
 
             <MemberIcon
               label='Cascading Style Sheets (CSS) 3'
               href='https://www.w3schools.com/css/default.asp'
             >
-              <Image
-                src={css3}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={css3} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon
               label='JavaScript'
               padding='8px'
               href='https://www.w3schools.com/js/default.asp'
             >
-              <Image
-                src={js}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={js} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon
               label='TypeScript'
               padding='8px'
               href='https://www.w3schools.com/typescript/index.php'
             >
-              <Image
-                src={ts}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={ts} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Next.js' href='https://nextjs.org/'>
-              <Image
-                src={nextDotJs}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={nextDotJs} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
-            <MemberIcon
-              label='React'
-              href='https://www.w3schools.com/react/default.asp'
-            >
-              <Image
-                src={react}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+            <MemberIcon label='React' href='https://www.w3schools.com/react/default.asp'>
+              <Image src={react} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
-            <MemberIcon
-              label='Redux'
-              padding='8px'
-              href='https://redux.js.org/'
-            >
-              <Image
-                src={redux}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+            <MemberIcon label='Redux' padding='8px' href='https://redux.js.org/'>
+              <Image src={redux} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='GraphQL' href='https://graphql.org/'>
-              <Image
-                src={graphql}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={graphql} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
-            <MemberIcon
-              label='NodeJS'
-              href='https://www.w3schools.com/nodejs/default.asp'
-            >
-              <Image
-                src={nodeJs}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+            <MemberIcon label='NodeJS' href='https://www.w3schools.com/nodejs/default.asp'>
+              <Image src={nodeJs} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
-            <MemberIcon
-              label='Framer Motion'
-              href='https://www.framer.com/motion/'
-            >
-              <Image
-                src={framer}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+            <MemberIcon label='Framer Motion' href='https://www.framer.com/motion/'>
+              <Image src={framer} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Angular' href='https://angular.io/'>
-              <Image
-                src={angular}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={angular} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Vue' href='https://vuejs.org/'>
-              <Image
-                src={vue}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={vue} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
 
             <MemberIcon label='Svelte Kit' href='https://kit.svelte.dev/'>
-              <Image
-                src={svelte}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={svelte} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
           </Group>
 
@@ -423,88 +315,34 @@ const Home = () => {
               padding='6px'
               href='https://www.adobe.com/products/photoshop.html'
             >
-              <Image
-                src={photoshop}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={photoshop} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Aseprite' href='https://www.aseprite.org/'>
-              <Image
-                src={aseprite}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={aseprite} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Canva' href='https://www.canva.com/'>
-              <Image
-                src={canva}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={canva} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Figma' href='https://www.figma.com/'>
-              <Image
-                src={figma}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={figma} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
           </Group>
 
           <Group title='Database'>
             <MemberIcon label='Docker' href='https://www.docker.com/'>
-              <Image
-                src={docker}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={docker} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Firebase' href='https://firebase.google.com/'>
-              <Image
-                src={firebase}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={firebase} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='MongoDB' href='https://www.mongodb.com/'>
-              <Image
-                src={mongodb}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={mongodb} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Redis' href='https://redis.io/'>
-              <Image
-                src={redis}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={redis} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
             <MemberIcon label='Prisma' href='https://www.prisma.io/'>
-              <Image
-                src={prisma}
-                alt='skill'
-                loading='lazy'
-                width={40}
-                height={40}
-              />
+              <Image src={prisma} alt='skill' loading='lazy' width={40} height={40} />
             </MemberIcon>
           </Group>
         </Section>
@@ -545,10 +383,7 @@ const Home = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link
-                href='https://www.youtube.com/channel/UCcQ_cOUHcydKmrrWz87qvBw'
-                target='_blank'
-              >
+              <Link href='https://www.youtube.com/channel/UCcQ_cOUHcydKmrrWz87qvBw' target='_blank'>
                 <Button
                   variant='ghost'
                   colorScheme={SchemeColorTheme}
